@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
 <?php include 'menu.php'; ?>
 
 <div class="jumbotron">
@@ -36,7 +36,6 @@
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
         nisi ut aliquip ex ea commodo consequat. </p>
-        <a href="about.php" target=_blank class="btn btn-success">More about us </a>
     </div>
   </div>
 </div>

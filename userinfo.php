@@ -27,6 +27,7 @@
     {
         echo '<script> alert("ERROR!"); </script>';
     }*/
+    }
     #mysqli_query($con, $query);
     header('location:index.php');
 ?>
