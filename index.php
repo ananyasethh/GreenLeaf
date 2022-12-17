@@ -50,6 +50,8 @@
   </a>
 </div>
 
+<!-- ABOUT US -->
+
 <section class="my-5">
   <div class="py-5">
     <h2 class="text-center">About Us</h2>
@@ -61,15 +63,18 @@
     </div>
     <div class="col-lg-6 col-md-6 col-12">
       <h2 class="display-4">We are GreenLeaf.</h2>
-      <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-        nisi ut aliquip ex ea commodo consequat. </p>
+      <p class="py-3">An e-Nursery website with a mission to present to you selected indoor and 
+        outdoor plants, tools and accessories, and beautiful planting pots to showcase your home's 
+        greenery. Taste the essence of living in a greener world with the motto of <em> Go Green! 
+          Grow Green! Live Green! </em>
+</p>
         <a href="about.php" target=_blank class="btn btn-success">More about us </a>
     </div>
   </div>
 </div>
 </section>
+
+<!-- PRODUCT CATEGORIES -->
 
 <section class="my-5">
   <div class="py-5">
@@ -82,7 +87,7 @@
         <img class="card-img-top" src="images\Plants.png" alt="Plants">
         <div class="card-body">
         <h4 class="card-title">Plants</h4>
-        <p class="card-text">Some example text.</p>
+        <p class="card-text">..................</p>
         <a href="#" class="btn btn-success">See Profile</a>
   </div>
 </div>
@@ -112,6 +117,8 @@
     </div>
   </div>
 </section>
+
+  <!--CONTACT US -->
 
 <section class="my-5">
   <div class="py-5">
