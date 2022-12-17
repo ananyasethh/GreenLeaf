@@ -87,8 +87,8 @@
         <img class="card-img-top" src="images\Plants.png" alt="Plants">
         <div class="card-body">
         <h4 class="card-title">Plants</h4>
-        <p class="card-text">..................</p>
-        <a href="#" class="btn btn-success">See Profile</a>
+        <p class="card-text">Let's decorate your home with some plants!</p>
+        <a href="#" class="btn btn-success">Let's Shop</a>
   </div>
 </div>
       </div>
@@ -98,8 +98,8 @@
         <img class="card-img-top" src="images\pots.jpg" alt="Pots">
         <div class="card-body">
         <h4 class="card-title">Pots</h4>
-        <p class="card-text">Some example text.</p>
-        <a href="#" class="btn btn-success">See Profile</a>
+        <p class="card-text">Check out some beautiful pots for your plants!</p>
+        <a href="#" class="btn btn-success">Let's Shop</a>
   </div>
 </div>
       </div>
@@ -109,8 +109,8 @@
         <img class="card-img-top" src="images\accessories.jpg" alt="Accessories">
         <div class="card-body">
         <h4 class="card-title">Accessories</h4>
-        <p class="card-text">Some example text.</p>
-        <a href="#" class="btn btn-success">See Profile</a>
+        <p class="card-text">Make plantation mess-free with handy accessories!</p>
+        <a href="#" class="btn btn-success">Let's Shop</a>
   </div>
 </div>
       </div>
@@ -120,7 +120,7 @@
 
   <!--CONTACT US -->
 <footer>
-  <p style="color: #367E18" class="p-3 bg-light text-center">@GreenLeafIndia</p>
+  <p style="color: #367E18" class="p-3 bg-light text-center">@GreenLeaf 2022</p>
 </footer>
 </body>
 </html>
