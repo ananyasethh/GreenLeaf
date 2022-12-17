@@ -112,35 +112,6 @@
     </div>
   </div>
 </section>
-
-<section class="my-5">
-  <div class="py-5">
-    <h2 class="text-center">Contact Us</h2>
-  </div>
-  <div class="w-50 m-auto">
-    <form action="userinfo.php" method="post">
-      <div class="form-group">
-        <label>Name</label>
-        <input type="text" name="user" autocomplete="off" class="form-control">
-      </div>
-      <div class="form-group">
-        <label>Email ID</label>
-        <input type="email" name="email" autocomplete="off" class="form-control">
-      </div>
-      <div class="form-group">
-        <label>Mobile Number</label>
-        <input type="text" name="mobile" autocomplete="off" class="form-control">
-      </div>
-      <div class="form-group">
-        <label>Comments</label>
-        <textarea class="form-control" name="comments"></textarea>
-      </div>
-      <div class="text-center">
-        <button type="submit" class="btn btn-success">Submit</button>
-      </div>
-    </form>
-  </div>
-</section>
 <footer>
   <p style="color: #367E18" class="p-3 bg-light text-center">@GreenLeafIndia</p>
 </footer>
