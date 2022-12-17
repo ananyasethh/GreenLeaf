@@ -114,7 +114,7 @@
         <div class="card-body">
         <h4 class="card-title">Plants</h4>
         <p class="card-text">Some example text.</p>
-        <a href="#" class="btn btn-primary">See Profile</a>
+        <a href="#" class="btn btn-success">See Profile</a>
   </div>
 </div>
       </div>
@@ -125,7 +125,7 @@
         <div class="card-body">
         <h4 class="card-title">Pots</h4>
         <p class="card-text">Some example text.</p>
-        <a href="#" class="btn btn-primary">See Profile</a>
+        <a href="#" class="btn btn-success">See Profile</a>
   </div>
 </div>
       </div>
@@ -136,7 +136,7 @@
         <div class="card-body">
         <h4 class="card-title">Accessories</h4>
         <p class="card-text">Some example text.</p>
-        <a href="#" class="btn btn-primary">See Profile</a>
+        <a href="#" class="btn btn-success">See Profile</a>
   </div>
 </div>
       </div>
@@ -167,10 +167,14 @@
         <label>Comments</label>
         <textarea class="form-control"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <div class="text-center">
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
     </form>
   </div>
-
 </section>
+<footer>
+  <p style="color: #367E18" class="p-3 bg-light text-center">@GreenLeafTeam</p>
+</footer>
 </body>
 </html>
