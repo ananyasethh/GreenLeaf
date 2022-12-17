@@ -121,7 +121,7 @@
 
       <div class="col-lg-4 col-md-4 col-12">
         <div class="card">
-        <img class="card-img-top" src="images\Plants.png" alt="Plants">
+        <img class="card-img-top" src="images\pots.jpg" alt="Pots">
         <div class="card-body">
         <h4 class="card-title">Pots</h4>
         <p class="card-text">Some example text.</p>
@@ -132,7 +132,7 @@
 
       <div class="col-lg-4 col-md-4 col-12">
         <div class="card">
-        <img class="card-img-top" src="images\Plants.png" alt="Plants">
+        <img class="card-img-top" src="images\accessories.jpg" alt="Accessories">
         <div class="card-body">
         <h4 class="card-title">Accessories</h4>
         <p class="card-text">Some example text.</p>
