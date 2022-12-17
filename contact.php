@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+<?php include 'menu.php'; ?>
 <section class="my-5">
   <div class="py-5">
     <h2 class="text-center">Contact Us</h2>
