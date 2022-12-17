@@ -17,5 +17,14 @@
     $comments=$_POST['comments'];
 
     $query= "insert into userinfodata (user,email,mobile,comment) values ('$user', '$email', '$mobile', '$comments')";
-    mysqli_query($con, $query);
+    $querypush = mysqli_query($con, $query);
+
+    if($querypush)     #if not eshtablished
+    {
+        echo '<script> alert("Comment is sent to our database!"); </script>';
+    }
+    else
+    {
+        echo '<script> alert("ERROR!"); </script>';
+    }
 ?>
