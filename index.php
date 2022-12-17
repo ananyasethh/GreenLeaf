@@ -91,7 +91,7 @@
       <img src="images\Green5.jpg" alt="Green5" class="img-fluid aboutimg">
     </div>
     <div class="col-lg-6 col-md-6 col-12">
-      <h2 class="display-4">We are GreenLeaf Team.</h2>
+      <h2 class="display-4">We are GreenLeaf.</h2>
       <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -140,7 +140,6 @@
   </div>
 </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -152,7 +151,7 @@
   <div class="w-50 m-auto">
     <form action="userinfo.php" method="post">
       <div class="form-group">
-        <label>Username</label>
+        <label>Name</label>
         <input type="text" name="user" autocomplete="off" class="form-control">
       </div>
       <div class="form-group">
@@ -165,7 +164,7 @@
       </div>
       <div class="form-group">
         <label>Comments</label>
-        <textarea class="form-control"></textarea>
+        <textarea class="form-control" name="comments"></textarea>
       </div>
       <div class="text-center">
         <button type="submit" class="btn btn-success">Submit</button>
@@ -174,7 +173,7 @@
   </div>
 </section>
 <footer>
-  <p style="color: #367E18" class="p-3 bg-light text-center">@GreenLeafTeam</p>
+  <p style="color: #367E18" class="p-3 bg-light text-center">@GreenLeafIndia</p>
 </footer>
 </body>
 </html>
