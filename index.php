@@ -106,5 +106,43 @@
   <div class="py-5">
     <h2 class="text-center">Product Categories</h2>
   </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+        <img class="card-img-top" src="images\Plants.png" alt="Plants">
+        <div class="card-body">
+        <h4 class="card-title">Plants</h4>
+        <p class="card-text">Some example text.</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+        <img class="card-img-top" src="images\Plants.png" alt="Plants">
+        <div class="card-body">
+        <h4 class="card-title">Pots</h4>
+        <p class="card-text">Some example text.</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+        <img class="card-img-top" src="images\Plants.png" alt="Plants">
+        <div class="card-body">
+        <h4 class="card-title">Accessories</h4>
+        <p class="card-text">Some example text.</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+      </div>
+
+    </div>
+  </div>
+</section>
 </body>
 </html>
