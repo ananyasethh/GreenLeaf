@@ -14,6 +14,8 @@ Development Server: Apache <br>
 <hr>
 <pre>
 <h3>PROJECT TEAM</h3>
-                       <strong>ANANYA SETH</strong>                            		       <strong>ARPAN BHATTACHARYA</strong>
-(Website Designer | Frontend Concept | Lead Developer)             (Technical Content Assistance | Co-Developer)
+<strong>ANANYA SETH</strong>                            
+(Website Designer | Frontend Concept | Lead Developer)        <br>     
+<strong>ARPAN BHATTACHARYA</strong>
+(Technical Content Assistance | Co-Developer)
 </pre>

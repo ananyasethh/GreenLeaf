@@ -32,10 +32,11 @@
     </div>
     <div class="col-lg-6 col-md-6 col-12">
       <h2 class="display-4">We are GreenLeaf.</h2>
-      <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-        nisi ut aliquip ex ea commodo consequat. </p>
+      <p class="py-3">An e-Nursery website with a mission to present to you selected indoor and 
+        outdoor plants, tools and accessories, and beautiful planting pots to showcase your home's 
+        greenery. Taste the essence of living in a greener world with the motto of <em> Go Green! 
+          Grow Green! Live Green! </em>
+      </p>
     </div>
   </div>
 </div>
