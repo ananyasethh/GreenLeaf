@@ -144,5 +144,33 @@
     </div>
   </div>
 </section>
+
+<section class="my-5">
+  <div class="py-5">
+    <h2 class="text-center">Contact Us</h2>
+  </div>
+  <div class="w-50 m-auto">
+    <form action="userinfo.php" method="post">
+      <div class="form-group">
+        <label>Username</label>
+        <input type="text" name="user" autocomplete="off" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Email ID</label>
+        <input type="email" name="email" autocomplete="off" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Mobile Number</label>
+        <input type="text" name="mobile" autocomplete="off" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Comments</label>
+        <textarea class="form-control"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+</section>
 </body>
 </html>
