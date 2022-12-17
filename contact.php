@@ -42,7 +42,7 @@
   </div>
 </section>
 <footer>
-  <p style="color: #367E18" class="p-3 bg-light text-center">@GreenLeafIndia</p>
+  <p style="color: #367E18" class="p-3 bg-light text-center">@GreenLeaf 2022</p>
 </footer>
 </body>
 </html>
