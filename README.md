@@ -11,6 +11,9 @@ Database:           MySQL <br>
 Development Server: Apache <br>
 </pre>
 <br>
-<h3>Contributors</h3>
-<strong>Web Designer and Lead Developer: ANANYA SETH</strong> <br>
-<strong>Project Assist and Support: ARPAN BHATTACHARYA</strong>
+<hr>
+<pre>
+<h3>PROJECT TEAM</h3>
+                       <strong>ANANYA SETH</strong>                            		       <strong>ARPAN BHATTACHARYA</strong>
+(Website Designer | Frontend Concept | Lead Developer)             (Technical Content Assistance | Co-Developer)
+</pre>
