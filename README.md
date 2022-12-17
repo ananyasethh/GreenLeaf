@@ -11,5 +11,6 @@ Database:           MySQL <br>
 Development Server: Apache <br>
 </pre>
 <br>
-Web Designer and Lead Developer: Ananya Seth <br>
-Project Assist and Support: Arpan Bhattacharya
+<h3>Contributors</h3>
+<strong>Web Designer and Lead Developer: Ananya Seth</strong> <br>
+<strong>Project Assist and Support: Arpan Bhattacharya</strong>
