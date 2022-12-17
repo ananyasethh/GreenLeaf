@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
   <div class="container-fluid">
     <a style="color: #367E18" class="navbar-brand" href="#">
       <img src="images\logo_greenLeaf.png" alt="Logo" width="30" height="">

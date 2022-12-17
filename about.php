@@ -15,7 +15,7 @@
 
 <?php include 'menu.php'; ?>
 
-<div class="jumbotron">
+<div style="padding-top: 130px;" class="jumbotron">
     <a style="color: #367E18"><img src="images\logo_greenLeaf.png" alt="Logo" width="30" height=""></a>
   <h1 style="color: #367E18">&nbsp;GREEN LEAF</h1>
   <p style="color: #38E54D">&nbsp;&nbsp;&nbsp;GO GREEN | GROW GREEN | LIVE GREEN</p>
