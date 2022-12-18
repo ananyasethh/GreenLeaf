@@ -88,7 +88,7 @@
         <div class="card-body">
         <h4 class="card-title">Plants</h4>
         <p class="card-text">Let's decorate your home with some plants!</p>
-        <a href="#" class="btn btn-success">Let's Shop</a>
+        <a href="plant.php" class="btn btn-success" target=_blank>Let's Shop</a>
   </div>
 </div>
       </div>
