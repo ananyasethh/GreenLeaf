@@ -1,0 +1,86 @@
+.categoryContainer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: aliceblue;
+  margin-bottom: 1rem;
+}
+
+.categoryContainer > span {
+  font-size: 1rem;
+  font-family: "Roboto", "sans-serif";
+  border: 1px solid grey;
+  width: 120px;
+  padding: 0.2rem;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.categoryContainer .active {
+  background-color: black;
+  color: white;
+}
+
+.store {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-row: 100px;
+}
+
+.box {
+  width: 400px;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.16);
+  box-shadow: 0 1px 4px #8080801c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.imageContainer {
+  flex: 1;
+}
+.imageContainer > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.contentContainer .title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+.contentContainer .priceContainer {
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  color: rgb(57, 56, 56);
+}
+
+.contentContainer > button {
+  padding: 0.5rem 1rem;
+  /* width: 200px;
+   */
+  border: none;
+  background-color: black;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
