@@ -118,7 +118,36 @@
   </div>
 </section>
 
-  <!--CONTACT US -->
+<!-- FAQ -->
+
+<section class="my-5">
+    <div class="py-5">
+      <h2 class="text-center">Frequently Asked Questions (FAQ)</h2>
+    </div>
+    <div class="container-fluid">
+      <div class="px-5">
+        <h4>WHICH INDOOR PLANTS ARE THE EASIEST TO CARE FOR?</h4>
+        <p>Pothos, Aglaonema, Sansevieria, Dracaena Lisa, Spider, Corn, Iron, ZZ plants,
+          Bird’s Nest fern, Cacti, Succulents. </p>
+        <br>
+        <h4>SHOULD I MIST MY PLANTS? WHICH PLANTS LIKE TO HAVE LEAVES MISTED?</h4>
+        <p>- Plants like Bird of Paradise, Philodendron, Fern, Iron plant, Bella Palm will enjoy
+          if you mist their leaves often. <br>- Plants like Bird of Paradise, Philodendron, Fern, Iron
+          plant, Bella Palm will enjoy if you mist their leaves often.<br> - Plants like Snake, ZZ, Yucca,
+          Jade prefer not to be misted. <br> Heat dries out the air the most, and misting pants that
+          love humidity <strong>daily</strong> during the cold season is essential. AC will remove
+          moisture from the air as well but not as much. Mist your humidity loving plants at least
+          few times a week during the warm season. A humidifier is also a good option. Your skin
+          and your plants will benefit from it equally :)
+        </p>
+        <div class="text-center">
+          <h5>Want to know more?</h5>
+          <a href="faq.php" target=_blank class="btn btn-success text-center">FAQs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 <footer>
   <p style="color: #367E18" class="p-3 bg-light text-center">@GreenLeaf 2022</p>
 </footer>
