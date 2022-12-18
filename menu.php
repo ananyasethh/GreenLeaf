@@ -12,7 +12,7 @@
           <a style="color: #38E54D" class="nav-link active" aria-current="page" href="index.php"><strong>Home</strong></a>
         </li>
         <li class="nav-item">
-          <a style="color: #38E54D" class="nav-link" href="#" target=_blank><strong>Shop</strong></a>
+          <a style="color: #38E54D" class="nav-link" href="store.php?category=all" target=_blank><strong>Shop</strong></a>
         </li>
         <li class="nav-item">
           <a style="color: #38E54D" class="nav-link" href="about.php"><strong>About</strong></a>
