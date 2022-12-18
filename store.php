@@ -1,3 +1,8 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./CSS/store.css"/>
 
@@ -18,10 +23,7 @@
     {
         $query =  $activeCat != 'all' ? "SELECT * from product  where Category='$activeCat'": ' SELECT * from product  ';
         $result = mysqli_query($con,$query);
-        
     }
-
-
 ?>
 
 <script>
@@ -34,7 +36,9 @@
     }
 </script>
 
-<div class="categoryContainer">
+<?php include 'menu.php'; ?>
+
+<div style="padding-top: 100px; background-color: #ADE792;" class="categoryContainer">
     <span onclick="onClick();" <?php if ($activeCat === "all") echo 'class="active"' ?>>All</span>
     <span onclick="onClick('Plant');" <?php if ($activeCat === "Plant") echo 'class="active"' ?> >Plants</span>
     <span onclick="onClick('Pot');" <?php if ($activeCat === "Pot") echo 'class="active"' ?>>Pots</span>
