@@ -88,7 +88,7 @@
         <div class="card-body">
         <h4 class="card-title">Plants</h4>
         <p class="card-text">Let's decorate your home with some plants!</p>
-        <a href="plant.php" class="btn btn-success" target=_blank>Let's Shop</a>
+        <a href="store.php?category=Plant" class="btn btn-success" target=_blank>Let's Shop</a>
   </div>
 </div>
       </div>
@@ -99,7 +99,7 @@
         <div class="card-body">
         <h4 class="card-title">Pots</h4>
         <p class="card-text">Check out some beautiful pots for your plants!</p>
-        <a href="#" class="btn btn-success">Let's Shop</a>
+        <a href="store.php?category=Pot" class="btn btn-success">Let's Shop</a>
   </div>
 </div>
       </div>
@@ -110,7 +110,7 @@
         <div class="card-body">
         <h4 class="card-title">Accessories</h4>
         <p class="card-text">Make plantation mess-free with handy accessories!</p>
-        <a href="#" class="btn btn-success">Let's Shop</a>
+        <a href="store.php?category=Accessories" class="btn btn-success">Let's Shop</a>
   </div>
 </div>
       </div>
