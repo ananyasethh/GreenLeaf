@@ -67,7 +67,8 @@
     text-transform: none;
 }
 
-.container form .row .col .inputbox input:focus{
+.container form .row .col .inputbox input:focus
+{
     border: 1px solid #000;
 }
 
@@ -95,5 +96,5 @@
 .container form .submit-btn:hover
 {
     background:#2ecc71;
-    
+
 }
