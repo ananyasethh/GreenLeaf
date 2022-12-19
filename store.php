@@ -65,7 +65,7 @@
                                 <button class='AddToCartButton'>Add To Cart</button>
                             </div>
                         </div>
-                ";   
+                        ";   
                 }
             }
         ?>
