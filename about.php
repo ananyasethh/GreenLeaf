@@ -43,7 +43,7 @@
 </div>
 <!-- 2nd container -->
 <div class="container-fluid pt-5">
-    <h2 class="display-5 text-center">Our Vision and Mission</h2>
+    <h2 class="display-5 text-center">Our Thinking!</h2>
       <div style = "margin: auto; width: 50%; padding: 10px;">
           <p style="font-size: 20px;" class="py-2">
             Plants in homes are not only for good looks, it does contributes ample in absorbtion of toxins 
@@ -51,14 +51,52 @@
           </p>
 
           <p style="font-size: 20px;" class="py-2">
-          With the growing living standards of people, the space for gardening and plantation is decreasing. 
-          Here we come in the picture - to give you a solution for enjoying having plants even in less and 
-          sophisticated spaces.
+            Most of us living in modern apartments have very limited access to parks and environmental 
+            resources, so why not bring a bit of it to our homes? Here we come in the picture of giving 
+            you a solution for enjoying having plants even in less and sophisticated spaces by GreenLeaf.
           </p>
 
-          <p style="font-size: 20px;" class="py-2"></p>
+          <p style="font-size: 20px;" class="py-2">
+          When we can order groceries online, food online, why not plants and related products? 
+          With this idea we are here with our range of products on board.
+          </p>
       </div>
-</div>
+      <h2 class="display-5 text-center">Our Vission!</h2>
+      <div style = "margin: auto; width: 50%; padding: 10px;">
+          <p style="font-size: 20px;" class="py-2">
+          We have a vision of valuably contributing to the green initiative by making our plantation 
+          roducts available in a bundle of quality and affordability to the people of India. We have a 
+          vision of making each home a clean-green home and making us feel more connected to nature using 
+          nature's own gifts.
+          </p>
+      </div>
+      <h2 class="display-5 text-center">Our Work!</h2>
+      <div style = "margin: auto; width: 50%; padding: 10px;">
+          <p style="font-size: 20px;" class="py-2">
+            We are on a path of being a one-stop solution for all those who love to be connected to plants. 
+            We have products in 3 categories:
+          </p>
+          <p class="py-1">  
+            <strong>PLANTS</strong> <br> 
+            We have a collection of both indoor and outdoor plants on our site, selected in such a way 
+            that suits all. Plants for all!
+            <br>
+            <strong>POTS</strong> <br>
+            You cannot imagine a neat home without pots to place your plants in it. Isn't it? So we present 
+            to you our stylish, beautiful, durable pots.
+            <br>
+            <strong>ACCESSORIES</strong> <br>
+            Let us reduce your effort of doing messy jobs on the plantation and caring for your green friends
+             by simply presenting to you our range of plantation accessories.
+          </p>
+      </div>
+          <p style="font-size: 20px;" class="py-2 text-center">
+              <em>We hope you reach your expectations and make you keep loving the world of greenery with GreenLeaf.</em>
+              <br>
+              <h5 class="text-center">Go Green! Grow Green! Live Green!</h5>
+              <h6 class="text-center">- Team GreenLeaf</h5>
+          </p> 
+
 </section>
 
 <footer>
