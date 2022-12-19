@@ -32,13 +32,32 @@
     </div>
     <div class="col-lg-6 col-md-6 col-12">
       <h2 class="display-4">We are GreenLeaf.</h2>
-      <p class="py-3">An e-Nursery website with a mission to present to you selected indoor and 
-        outdoor plants, tools and accessories, and beautiful planting pots to showcase your home's 
-        greenery. Taste the essence of living in a greener world with the motto of <em> Go Green! 
-          Grow Green! Live Green! </em>
+      <p class="py-3">GreenLeaf is an e-Nursery website with a mission of presenting you our product range
+         of selected indoor and outdoor plants, tools and accessories, and beautiful planting pots in affordable
+         price margins to help you showcase your home's greenery and love for the environment. 
+          <br> Taste the essence of living in a greener world with the motto of <em> Go Green! Grow Green! 
+              Live Green! </em>
       </p>
     </div>
   </div>
+</div>
+<!-- 2nd container -->
+<div class="container-fluid pt-5">
+    <h2 class="display-5 text-center">Our Vision and Mission</h2>
+      <div style = "margin: auto; width: 50%; padding: 10px;">
+          <p style="font-size: 20px;" class="py-2">
+            Plants in homes are not only for good looks, it does contributes ample in absorbtion of toxins 
+            from air, boosting mood of us. Basically both lookwise and healtwise, plantation is worth it. 
+          </p>
+
+          <p style="font-size: 20px;" class="py-2">
+          With the growing living standards of people, the space for gardening and plantation is decreasing. 
+          Here we come in the picture - to give you a solution for enjoying having plants even in less and 
+          sophisticated spaces.
+          </p>
+
+          <p style="font-size: 20px;" class="py-2"></p>
+      </div>
 </div>
 </section>
 
