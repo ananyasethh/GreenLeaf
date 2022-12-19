@@ -23,7 +23,7 @@
 
 <section class="my-5">
   <div class="py-5">
-    <h2 class="text-center">About Us</h2>
+    <h2 class="text-center display-3">About Us</h2>
   </div>
   <div class="container-fluid">
   <div class="row">
