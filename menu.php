@@ -15,7 +15,7 @@
           <a style="color: #38E54D" class="nav-link" href="store.php?category=all" target=_blank><strong>Shop</strong></a>
         </li>
         <li class="nav-item">
-          <a style="color: #38E54D" class="nav-link" href="about.php"><strong>About</strong></a>
+          <a style="color: #38E54D" class="nav-link" href="about.php" target=_blank><strong>About</strong></a>
         </li>
         <li class="nav-item">
           <a style="color: #38E54D" class="nav-link" href="contact.php" target=_blank><strong>Contact</strong></a>
