@@ -2,31 +2,85 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="./CSS/store.css"/>
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"><link rel="stylesheet" type="text/css" href="./CSS/store.css"/>
+  
 <?php
+
     $activeCat = $_GET['category'];
     $host = "localhost";
     $user = "root";
     $pass = "";
     $db = "greenleaf";
-    $storeData = [];
     $con = mysqli_connect($host, $user, $pass, $db);
+    if (isset($_GET['productId'])) {
+        $productId = $_GET['productId'];
+        // echo $productId;
+        if (isset($_COOKIE['userId'])) {
+            $data = mysqli_query($con, "SELECT products from cart where id = '$_COOKIE[userId]'");
+            // echo ($_COOKIE['userId']);
+            if ($data->num_rows === 0) {
+                // $prod = (object) array ($productId => );
+                $prod = json_encode(array($productId => 1));
+                mysqli_query($con, "INSERT INTO cart (id,products) values ('$_COOKIE[userId]', '$prod');");
+            }
+            else {
+                while($row = $data->fetch_assoc()) {
+                    $allData = get_object_vars(json_decode($row['products']));
+                    // echo ();
+                    if (isset($allData[$productId])) {
+                        $allData[$productId] += 1;
+                        $prod = json_encode($allData);
+                        mysqli_query($con, "UPDATE cart set products = '$prod' where id = '$_COOKIE[userId]'");
+                    } else {
+                        // $newData = array($productId => 1);
+                        // $allData.array_merge($newData);
+                        $allData = (json_decode($row['products']));
+                        $allData->$productId = 1;
+                        // print_r($allData);
+                        $prod = json_encode($allData);
+                        mysqli_query($con, "UPDATE cart set products = '$prod' where id = '$_COOKIE[userId]'");
+                    }
+                }
+            }
+        }
+        header("Location: store.php?category=$activeCat");
+    }
+    $storeData = [];
     if(!$con)
     {
         echo "Connection failed!";
     }
-    else
+        else
     {
         $query =  $activeCat != 'all' ? "SELECT * from product  where Category='$activeCat'": ' SELECT * from product  ';
         $result = mysqli_query($con,$query);
+        
     }
+
+
+
 ?>
 
 <script>
+    const uid = function(){
+    return Date.now().toString(36) + Math.random().toString(36).substr(2);
+    }
+    window.onload = () => {
+        // console.log(, "UID IS COMING")
+        if (!localStorage.getItem('userId'))
+        {
+            const id = uid();
+            localStorage.setItem('userId', id);
+            function setCookie(name,value,exp_days) {
+                var d = new Date();
+                d.setTime(d.getTime() + (exp_days*24*60*60*1000));
+                var expires = "expires=" + d.toGMTString();
+                document.cookie = name + "=" + value + ";" + expires + ";path=/";
+            }
+            setCookie('userId',id,500);
+            window.location.reload();
+        } 
+    }
     function onClick ($value) {
         if ($value)
         $url = "store.php?category=" + $value;
@@ -34,6 +88,23 @@
         $url = "store.php?category=all";
         window.location.href = $url;
     }
+
+    addToCart = (id) => {
+        let data = JSON.parse(localStorage.getItem('cart')) || {};
+        if (!data[id]) {
+            data[id] = {
+                id: id,
+                qty:1   
+            }
+        } else {
+            data[id].qty += 1
+        }
+        const newData = JSON.stringify(data);
+        console.log(newData, 'data added')
+        localStorage.setItem('cart', newData);
+        window.location.href = "store.php?productId=" + id + "&category="+ '<?= $activeCat ?>';
+        // alert('Producted added in the cart');
+}
 </script>
 
 <?php include 'menu.php'; ?>
@@ -62,14 +133,11 @@
                             <div class='contentContainer'>
                                 <span class='title'>$name</span>
                                 <span class='priceContainer'>$price</span>
-                                <button class='AddToCartButton'>Add To Cart</button>
+                                <button class='AddToCartButton' onclick={addToCart('$id')}>Add To Cart</button>
                             </div>
                         </div>
-                        ";   
+                ";   
                 }
             }
         ?>
 </div>
-<footer>
-  <p style="color: #367E18" class="p-3 bg-light text-center">@GreenLeaf 2022</p>
-</footer>
