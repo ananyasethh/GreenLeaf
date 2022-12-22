@@ -150,6 +150,11 @@
     </div>
   </section>
 
+  <!-- Test for fetching text from a tag im php -->
+  <div>
+    <p>TEST TEXT</p>
+  </div>
+
   <footer>
     <p style="color: #367E18" class="p-3 bg-light text-center">@GreenLeaf 2022</p>
   </footer>

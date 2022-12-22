@@ -1,6 +1,17 @@
-<link rel="stylesheet" type="text/css" href="./CSS/store.css"/>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store - GreenLeaf</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"><link rel="stylesheet" type="text/css" href="./CSS/store.css"/>
+</head>
+<body>
 
 <?php
 
@@ -15,6 +26,7 @@
         // echo $productId;
         if (isset($_COOKIE['userId'])) {
             $data = mysqli_query($con, "SELECT products from cart where id = '$_COOKIE[userId]'");
+            print_r($data);
             // echo ($_COOKIE['userId']);
             if ($data->num_rows === 0) {
                 // $prod = (object) array ($productId => );
@@ -23,9 +35,14 @@
             }
             else {
                 while($row = $data->fetch_assoc()) {
-                    $allData = get_object_vars(json_decode($row['products']));
-                    // echo ();
-                    if (isset($allData[$productId])) {
+                    // print_r($row);  
+
+                    $allData = (json_decode($row['products']));
+                    if ($allData && count($allData) > 0) {
+                        $allData = get_object_vars($allData);
+                    }
+                    
+                    if ( isset($allData[$productId])) {
                         $allData[$productId] += 1;
                         $prod = json_encode($allData);
                         mysqli_query($con, "UPDATE cart set products = '$prod' where id = '$_COOKIE[userId]'");
@@ -33,7 +50,13 @@
                         // $newData = array($productId => 1);
                         // $allData.array_merge($newData);
                         $allData = (json_decode($row['products']));
+
                         $allData->$productId = 1;
+
+                        if (count($allData) == 0) {
+                            $allData[$productId] = 1;
+                        }
+                        // print_r(count($allData));
                         // print_r($allData);
                         $prod = json_encode($allData);
                         mysqli_query($con, "UPDATE cart set products = '$prod' where id = '$_COOKIE[userId]'");
@@ -48,8 +71,7 @@
     {
         echo "Connection failed!";
     }
-        else
-    {
+        else {
         $query =  $activeCat != 'all' ? "SELECT * from product  where Category='$activeCat'": ' SELECT * from product  ';
         $result = mysqli_query($con,$query);
         
@@ -60,25 +82,7 @@
 ?>
 
 <script>
-    const uid = function(){
-    return Date.now().toString(36) + Math.random().toString(36).substr(2);
-    }
-    window.onload = () => {
-        // console.log(, "UID IS COMING")
-        if (!localStorage.getItem('userId'))
-        {
-            const id = uid();
-            localStorage.setItem('userId', id);
-            function setCookie(name,value,exp_days) {
-                var d = new Date();
-                d.setTime(d.getTime() + (exp_days*24*60*60*1000));
-                var expires = "expires=" + d.toGMTString();
-                document.cookie = name + "=" + value + ";" + expires + ";path=/";
-            }
-            setCookie('userId',id,500);
-            window.location.reload();
-        } 
-    }
+
     function onClick ($value) {
         if ($value)
         $url = "store.php?category=" + $value;
@@ -88,24 +92,27 @@
     }
 
     addToCart = (id) => {
-        let data = JSON.parse(localStorage.getItem('cart')) || {};
-        if (!data[id]) {
-            data[id] = {
-                id: id,
-                qty:1   
-            }
-        } else {
-            data[id].qty += 1
-        }
-        const newData = JSON.stringify(data);
-        console.log(newData, 'data added')
-        localStorage.setItem('cart', newData);
+        // let data = JSON.parse(localStorage.getItem('cart')) || {};
+        // if (!data[id]) {
+        //     data[id] = {
+        //         id: id,
+        //         qty:1   
+        //     }
+        // } else {
+        //     data[id].qty += 1
+        // }
+        // // const newData = JSON.stringify(data);
+        // // console.log(newData, 'data added')
+        // // localStorage.setItem('cart', newData);
         window.location.href = "store.php?productId=" + id + "&category="+ '<?= $activeCat ?>';
         // alert('Producted added in the cart');
-}
+    }
+
 </script>
 
-<div class="categoryContainer">
+<?php include 'menu.php'; ?>
+
+<div style="padding-top: 100px; background-color: #ADE792;" class="categoryContainer">
     <span onclick="onClick();" <?php if ($activeCat === "all") echo 'class="active"' ?>>All</span>
     <span onclick="onClick('Plant');" <?php if ($activeCat === "Plant") echo 'class="active"' ?> >Plants</span>
     <span onclick="onClick('Pot');" <?php if ($activeCat === "Pot") echo 'class="active"' ?>>Pots</span>
@@ -137,3 +144,6 @@
             }
         ?>
 </div>
+
+        </body>
+        </html>

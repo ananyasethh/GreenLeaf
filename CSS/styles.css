@@ -9,3 +9,14 @@
     width: 100%;
     height: 250px!important;
 }
+
+.about-center
+{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.about-text-size{
+    font-size: medium;
+}
