@@ -1,0 +1,149 @@
+.cart-container {
+  margin-top: 8%;
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  padding: 0 5%;
+}
+
+.shipping-details {
+  padding: 2rem;
+  flex: 1;
+}
+
+.cart {
+  flex: 1;
+  padding: 2rem;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid grey;
+  padding: 3rem 1rem;
+  border-radius: 10px;
+}
+
+.content-wrapper > .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top > span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.top > button {
+  padding: 0.5rem 3rem;
+  border: none;
+  color: #367e18;
+  font-weight: 600;
+  border: 1px solid #367e18;
+  transition: all 250ms ease-in;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-container > input {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.order-instruction {
+  width: 100%;
+}
+
+.order-instruction > .order-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-top > span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.order-top > button {
+  padding: 0.3rem 2rem;
+  border: 1px solid #808080;
+  color: #367e18;
+  font-weight: 600;
+}
+
+.order-instruction > input {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.orders-section {
+  margin-top: 1rem;
+}
+.order-object {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  /* border: 1px solid #808080; */
+  width: max-content;
+  /* margin: auto; */
+}
+
+.order-object > span {
+  font-size: large;
+}
+.center-object {
+  /* text-align: center; */
+  padding: 0.5rem;
+}
+.center-object > h5 {
+  margin-bottom: 1rem;
+}
+.center-object > .qty {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.qty > button {
+  border: 1px solid #808080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 30px;
+  font-weight: 600;
+}
+
+.totalAmount {
+  padding: 3rem 0;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 40%;
+  align-items: center;
+}
+
+.orderNow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.placeOrder {
+  padding: 0.3rem 2rem;
+  border: 1px solid #808080;
+  color: #367e18;
+  font-weight: 600;
+  transition: all 250ms ease-in-out;
+}
+button:hover {
+  color: #fff !important;
+  background-color: #367e18 !important;
+}
