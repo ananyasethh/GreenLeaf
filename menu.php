@@ -49,7 +49,6 @@
         <li class="nav-item">
           <a style="color: #38E54D" class="nav-link" href="cart.php"><strong>Cart</strong></a>
         </li>
-
       </ul>
     </div>
   </div>
