@@ -69,7 +69,7 @@
                 }
             }
         }
-        // header("Location: store.php?category=$activeCat");
+        header("Location: store.php?category=$activeCat");
     }
     $storeData = [];
     if(!$con)
@@ -115,7 +115,7 @@
 
 </script>
 
-<!-- <?php include 'menu.php'; ?> -->
+<?php include 'menu.php'; ?>
 
 <div style="padding-top: 100px; background-color: #ADE792;" class="categoryContainer">
     <span onclick="onClick();" <?php if ($activeCat === "all") echo 'class="active"' ?>>All</span>
