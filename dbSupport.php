@@ -37,7 +37,7 @@
         $query[11] = "INSERT INTO product VALUES('po3','Handmade Sabaii Grass Planter',675,'Pot','https://m.media-amazon.com/images/I/9171Or1qSSL._SX679_.jpg');";
         $query[12] = "INSERT INTO product VALUES('po4','Sea Grass Planter Basket',500,'Pot','https://m.media-amazon.com/images/I/71fqdnWc+EL._SX679_.jpg');";
         $query[13] = "INSERT INTO product VALUES('po5','Self Watering Plant Pots',999,'Pot','https://m.media-amazon.com/images/I/71sajkOivvL._SX679_.jpg');";
-        $query[14] = "INSERT INTO product VALUES('po6','Smiling Faces Mini Plant Pots',800,'Pot','https://i.pinimg.com/originals/e4/e2/c2/e4e2c2d2cb9a3c1c034d6187e649221b.jpg;');";
+        $query[14] = "INSERT INTO product VALUES('po6','Smiling Faces Mini Plant Pots',800,'Pot','https://i5.walmartimages.com/asr/22629c0f-a948-44cd-9f64-115479276a54.ca05c3ea7cf74bb44ffac9240e49a4f4.jpeg');";
         $query[15] = "INSERT INTO product VALUES('ac1','Leafy Tales Moss Stick',399,'Accessories','https://m.media-amazon.com/images/I/51fAlu0qtPL._SX300_SY300_QL70_FMwebp_.jpg');";
         $query[16] = "INSERT INTO product VALUES('ac2','Pruning Shears',500,'Accessories','https://m.media-amazon.com/images/I/416oYruiBhS._SY300_SX300_QL70_FMwebp_.jpg');";
         $query[17] = "INSERT INTO product VALUES('ac3','Mini Garden Tools',95,'Accessories','https://m.media-amazon.com/images/I/31Sqgql2R1L._SX300_SY300_QL70_FMwebp_.jpg');";
