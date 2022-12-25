@@ -57,7 +57,9 @@
                         $prod = json_encode($allData);
 
                         $putData = $prod;
-
+                        if ($putData == "[]"){
+                            $putData = "{}";
+                        }
                         mysqli_query($con, "UPDATE cart set products = '$putData' where id = '$_COOKIE[userId]'");
                     }
             }

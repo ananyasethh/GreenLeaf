@@ -26,7 +26,7 @@
         // echo $productId;
         if (isset($_COOKIE['userId'])) {
             $data = mysqli_query($con, "SELECT products from cart where id = '$_COOKIE[userId]'");
-            print_r($data);
+            
             // echo ($_COOKIE['userId']);
             if ($data->num_rows === 0) {
                 // $prod = (object) array ($productId => );
@@ -35,36 +35,41 @@
             }
             else {
                 while($row = $data->fetch_assoc()) {
-                    // print_r($row);  
+                    print_r($row);  
 
-                    $allData = (json_decode($row['products']));
+                    $allData = get_object_vars(json_decode($row['products']));
+                    print_r($allData);
                     if ($allData && count($allData) > 0) {
-                        $allData = get_object_vars($allData);
+                        // $allData = get_object_vars($allData);
                     }
                     
-                    if ( isset($allData[$productId])) {
+                    if (isset($allData[$productId])) {
                         $allData[$productId] += 1;
                         $prod = json_encode($allData);
+                        // print("data is going \n");
+                        // print($prod);
                         mysqli_query($con, "UPDATE cart set products = '$prod' where id = '$_COOKIE[userId]'");
                     } else {
                         // $newData = array($productId => 1);
                         // $allData.array_merge($newData);
                         $allData = (json_decode($row['products']));
-
                         $allData->$productId = 1;
+                        echo "\n lelo";
+                        print_r($allData);
 
-                        if (count($allData) == 0) {
-                            $allData[$productId] = 1;
-                        }
+                        // if (count($allData) == 0) {
+                        //     $allData[$productId] = 1;
+                        // }
                         // print_r(count($allData));
                         // print_r($allData);
                         $prod = json_encode($allData);
+                        print($prod);
                         mysqli_query($con, "UPDATE cart set products = '$prod' where id = '$_COOKIE[userId]'");
                     }
                 }
             }
         }
-        header("Location: store.php?category=$activeCat");
+        // header("Location: store.php?category=$activeCat");
     }
     $storeData = [];
     if(!$con)
@@ -110,7 +115,7 @@
 
 </script>
 
-<?php include 'menu.php'; ?>
+<!-- <?php include 'menu.php'; ?> -->
 
 <div style="padding-top: 100px; background-color: #ADE792;" class="categoryContainer">
     <span onclick="onClick();" <?php if ($activeCat === "all") echo 'class="active"' ?>>All</span>
