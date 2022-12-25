@@ -20,6 +20,8 @@
         } 
     }
 </script>
+
+<!-- Front -->
 <nav class="navbar navbar-expand-lg bg-light fixed-top">
   <div class="container-fluid">
     <a style="color: #367E18; font-size: 1.5rem" class="navbar-brand" href="#" >
