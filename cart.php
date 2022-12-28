@@ -1,75 +1,72 @@
-
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart - GreenLeaf</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"><link rel="stylesheet" type="text/css" href="./CSS/cart.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./CSS/cart.css" />
 </head>
 
 <body>
 
-<?php include 'menu.php'; ?>
-<?php 
+    <?php //include 'menu.php'; ?>
     
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $db = "greenleaf";
-    $con = mysqli_connect($host, $user, $pass, $db);
+    <?php
+
+    include 'DBconfig.php';
 
     if ($con) {
         if (isset($_GET['productEdit'])) {
             $operation = $_GET['operation'];
             $id = $_GET['id'];
             $data = mysqli_query($con, "SELECT products from cart where id = '$_COOKIE[userId]'");
-            
+
             if ($operation == "add") {
                 // mysqli_query($con)
                 print("AAya");
                 ($row = $data->fetch_assoc());
                 // print_r($data->fetch_assoc());
                 $allData = get_object_vars(json_decode($row['products']));
-                    if (isset($allData[$id])) {
-                        $allData[$id] += 1;
-                        $prod = json_encode($allData);
-                        mysqli_query($con, "UPDATE cart set products = '$prod' where id = '$_COOKIE[userId]'");
-                    }
-            }
-            else {
+                if (isset($allData[$id])) {
+                    $allData[$id] += 1;
+                    $prod = json_encode($allData);
+                    mysqli_query($con, "UPDATE cart set products = '$prod' where id = '$_COOKIE[userId]'");
+                }
+            } else {
                 ($row = $data->fetch_assoc());
                 // print_r($data->fetch_assoc());
                 $allData = get_object_vars(json_decode($row['products']));
-                    if (isset($allData[$id])) {
-                        $allData[$id] -= 1;
-                        if ($allData[$id] == 0) {
-                            unset($allData[$id]);
-                        }
-                        // if (count($allData) == 0) {
-                        //     $allData = [];
-                        // }
-                        $countOfarr = count($allData);
-                        $prod = json_encode($allData);
-
-                        $putData = $prod;
-                        if ($putData == "[]"){
-                            $putData = "{}";
-                        }
-                        mysqli_query($con, "UPDATE cart set products = '$putData' where id = '$_COOKIE[userId]'");
+                if (isset($allData[$id])) {
+                    $allData[$id] -= 1;
+                    if ($allData[$id] == 0) {
+                        unset($allData[$id]);
                     }
+                    // if (count($allData) == 0) {
+                    //     $allData = [];
+                    // }
+                    $countOfarr = count($allData);
+                    $prod = json_encode($allData);
+
+                    $putData = $prod;
+                    if ($putData == "[]") {
+                        $putData = "{}";
+                    }
+                    mysqli_query($con, "UPDATE cart set products = '$putData' where id = '$_COOKIE[userId]'");
+                }
             }
             header("Location: cart.php");
         } else if (isset($_COOKIE['userId'])) {
             $data = mysqli_query($con, "SELECT products from cart where id = '$_COOKIE[userId]'");
             // echo ($_COOKIE['userId']);
             {
-                while($row = $data->fetch_assoc()) {
-                    
+                while ($row = $data->fetch_assoc()) {
+
                     $allData = get_object_vars(json_decode($row['products']));
                     // echo (); 
                     if (!$allData)
@@ -89,7 +86,7 @@
                         $createData->image = $productData["Image"];
                         $createData->qty = $allData[$createData->id];
                         $allProductDetails[$i] = ($createData);
-                    }   
+                    }
 
                     // print_r($allProductDetails);
                     // if (isset($allData[$productId])) {
@@ -108,61 +105,68 @@
                 }
             }
         }
-    }
+    }       
 
-?>
+    ?>
 
-<script> 
-    updateOrder = (id) => {
-        console.log(id, "Order id is coming here");
-        window.location.href = "cart.php?productEdit=true&operation=add&id="+id;
-    }
+    <script>
+        updateOrder = (id) => {
+            console.log(id, "Order id is coming here");
+            window.location.href = "cart.php?productEdit=true&operation=add&id=" + id;
+        }
 
-    updateOrder1 = (id) => {
-        console.log(id, "Order id is coming here");
-        window.location.href = "cart.php?productEdit=true&operation=sub&id="+id;
-    }
-</script>
+        updateOrder1 = (id) => {
+            console.log(id, "Order id is coming here");
+            window.location.href = "cart.php?productEdit=true&operation=sub&id=" + id;
+        }
+    </script>
 
-<div class="cart-container">
+    <div class="cart-container">
 
-    <div class="shipping-details">
-        <div class="content-wrapper">
-            <div class="top">
-                <span>Shipping Details</span>
-                <button>Save</button>
-            </div>
-            <div class="form-container">
-                <input placeholder="Name"/>
-                <input placeholder="Address"/>
-                <input placeholder="pincode"/>
-                <input placeholder="Mobile Number" type="number"/>
-                <input placeholder="Email" type="email"/>
-            </div>
-            <div class="order-instruction">
-                <div class="order-top">
-                    <span>Order Instruction</span>
-                    <button>Add</button>
+        <div class="shipping-details">
+            <div class="content-wrapper">
+
+                <div class="top">
+                    <span>Shipping Details</span>
+                    <!-- <button name="">Save</button>  -->
                 </div>
-                <input placeholder="Please enter the additional details" />
+                <div>
+                    <!-- Pushing data to cartInfo.php -->
+                    <form action="cartInfo.php" method="post" class="form-container">
+                        <input placeholder="Enter Name" name="name" type="text"/>
+                        <input placeholder="Enter Email" name="email" type="email" />
+                        <input placeholder="Enter Mobile Number" name="mobile" type="text" maxlength="10"/>
+                        <input placeholder="Enter Pincode" name="pincode" type="text" maxlength="6"/>
+                        <textarea placeholder=" Address" name="address"></textarea>
+                        
+                        <button class="btn btn-success" type="submit" name="save" style="color: black; font-weight: bold;">SAVE</button>
+                    </form>
+
+                </div>
+                <div class="order-instruction">
+                    <div class="order-top">
+                        <span>Order Instruction</span>
+                        <button>Add</button>
+                    </div>
+                    <input placeholder="Please enter the additional details" />
+                </div>
+
             </div>
         </div>
-    </div>
+        <div class="cart">
 
-    <div class="cart">
-
-        <div class="orderNow">
-            <h5>Order Summary</h5>
-            <button class="placeOrder">Place Order</button>
-        </div>
-        <div class="orders-section">
-            <?php 
-            $totalAmount = 0;
-            foreach ($allProductDetails as $data) {
-                // print_r($data->name);
-                $total = $data->price * $data->qty;
-                $totalAmount += $total;
-                echo "
+            <div class="orderNow">
+                <h5>Order Summary</h5>
+                <button class="placeOrder">Place Order</button>
+            </div>
+            <div class="orders-section">
+                <?php
+                $totalAmount = 0;
+                foreach ($allProductDetails as $data) {
+                    // print_r($data->name);
+                    $total = $data->price * $data->qty;
+                    $totalAmount += $total;
+                    echo "
                     <div class='order-object'>
                         <img src='$data->image' width='80' height='80'/>
                         <div class='center-object'>
@@ -176,22 +180,20 @@
                     <span> ₹ $total </span>
                     </div>
                 ";
-            }
-            ?>
+                }
+                ?>
+            </div>
+            <div class="totalAmount">
+                <h5>Total Amount</h5>
+                <h3>₹ <?= $totalAmount ?>
+                </h3>
+            </div>
+
         </div>
-        <div class="totalAmount">
-            <h5>Total Amount</h5>
-            <h3>₹ <?= $totalAmount ?>
-            </h3>
-        </div>
+
 
     </div>
-
-
-</div>
 
 </body>
 
 </html>
-
-
