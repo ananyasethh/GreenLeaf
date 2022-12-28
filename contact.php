@@ -22,8 +22,10 @@
       <h2 class="text-center">Contact Us</h2>
     </div>
     <div class="w-50 m-auto">
+
       <form action="userinfo.php" method="post">
-        <div class="form-group">
+      
+      <div class="form-group">
           <label>Name</label>
           <input type="text" name="user" autocomplete="off" class="form-control">
         </div>
