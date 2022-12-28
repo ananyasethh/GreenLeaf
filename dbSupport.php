@@ -51,8 +51,17 @@
 		  products varchar(1000)
 		);";
 
+        $query[22] = "CREATE TABLE customer
+        (
+            name varchar(40),
+            mobile varchar(10) PRIMARY KEY,
+            email varchar(20),
+            address longtext,
+            pincode varchar(6)
+        );";
+
         #execution
-        for($i=0; $i<=21; $i++)
+        for($i=0; $i<=22; $i++)
         {
             mysqli_query($con,$query[$i]);
         }
