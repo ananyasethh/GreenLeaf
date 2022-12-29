@@ -23,28 +23,17 @@ else    #if connection established
                 $flag = 1;      #database found
                 //echo $flag;
             } 
-
-            // else if (! $testDB == "mag")    #create database and tables in it with data
-            // {
-            //     $flag = 2;       
-            // }
-           # print ("I am inside loop yet!");
-        }
-        #print("i am in IF block;");       # while end
-    }
-    #print("i am in 1st else block;");
-}
-
-#print ("i am out!");
-
+        }  #print("i am in IF block;");       # while end
+    }  #print("i am in 1st else block;");
+}   #print ("i am out!");
 #-----------------------------------------------------------------------
 #-----------------------------------------------------------------------
      if($flag == 1)  #database found
         {
             print ('Database Found. Connecting...');
-                sleep(5);
+                //sleep(5);
                 print ("header execution");
-                header('location:index.php');
+                #header('location:index.php');
                 //                 #go back to index code;
         }
         else if($flag == 0)  #database not found
@@ -99,7 +88,6 @@ else    #if connection established
         address longtext,
         pincode varchar(6)
     );";
-
             #execution
             for ($i = 0; $i <= 22; $i++) 
             {
@@ -108,8 +96,6 @@ else    #if connection established
             print ("DATABASE AND TABLE CREATED HIHIHIHIHIHI");
             sleep(3);
             print ("header executed after creating database;");
-            header('location:index.php');
-        }
-#print("out of all code!");
-#print("Flag: ".$flag);
+            //header('location:index.php');
+        }   #print("out of all code!");     #print("Flag: ".$flag);
 ?>
