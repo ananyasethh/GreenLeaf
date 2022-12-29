@@ -135,7 +135,7 @@
                     <form action="cartInfo.php" method="post" class="form-container">
                         <input placeholder="Enter Name" name="name" type="text"/>
                         <input placeholder="Enter Email" name="email" type="email" />
-                        <input placeholder="Enter Mobile Number" name="mobile" type="text" maxlength="10"/>
+                        <input placeholder="Enter Mobile Number" name="mobile" type="text" maxlength="10" minlength="10"/>
                         <input placeholder="Enter Pincode" name="pincode" type="text" maxlength="6"/>
                         <textarea placeholder=" Address" name="address"></textarea>
                         
