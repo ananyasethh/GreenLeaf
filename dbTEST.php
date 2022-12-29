@@ -1,0 +1,32 @@
+<?php
+    $host = "localhost";
+    $user = "root";
+    $pass = "";
+    #$db = "greenleaf";
+
+    $con = mysqli_connect($host, $user, $pass);
+    if(!$con)
+    {
+        echo "Connection failed!";
+    }
+    else
+    {
+        $checkQuery1 = mysqli_query($con, "SHOW DATABASES;");
+            if(mysqli_num_rows($checkQuery1) > 0)
+            {
+                while($row = mysqli_fetch_assoc($checkQuery1))
+                {
+                    $testDB =  $row["Database"];
+                    if($testDB == "greenleaf")  #greenleaf found
+                    {
+                        print ("i got it!");
+                       #go back to index code;
+                    }
+                }
+            }
+            else
+            {
+                
+            }
+    }
+?>
