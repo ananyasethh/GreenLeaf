@@ -23,8 +23,8 @@
 
 <nav class="navbar navbar-expand-lg bg-light fixed-top">
   <div class="container-fluid">
-    <a style="color: #367E18; font-size: 1.5rem" class="navbar-brand" href="index.php">
-      <img src="images\logo_greenLeaf.png" alt="Logo" width="30" height="">
+    <a style="color: #367E18; font-size: 2.3rem" class="navbar-brand" href="index.php">
+      <img src="images\logo_greenLeaf.png" alt="Logo" width="50" height="">
     GreenLeaf</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -65,6 +65,7 @@
 </div>
 
 <script>
+
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
 
@@ -76,7 +77,7 @@ function myFunction() {
 }
 </script>
 
-<script>
+<script>  //tool tip calling
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();   
 });
