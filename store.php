@@ -77,7 +77,7 @@
         echo "Connection failed!";
     }
         else {
-        $query =  $activeCat != 'all' ? "SELECT * from product  where Category='$activeCat'": ' SELECT * from product  ';
+        $query =  $activeCat != 'all' ? "SELECT * from product  where Category='$activeCat' ORDER BY RAND();": ' SELECT * from product ORDER BY Rand();';
         $result = mysqli_query($con,$query);
         
     }
@@ -140,7 +140,7 @@
                             </div>      
                             <div class='contentContainer'>
                                 <span class='title'>$name</span>
-                                <span class='priceContainer'>$price</span>
+                                <span class='priceContainer'>₹ $price /-</span>
                                 <button class='AddToCartButton' onclick={addToCart('$id')}>Add To Cart</button>
                             </div>
                         </div>
