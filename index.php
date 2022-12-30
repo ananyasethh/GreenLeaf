@@ -69,7 +69,20 @@
         greenery. Taste the essence of living in a greener world with the motto of <em> Go Green! 
           Grow Green! Live Green! </em>
 </p>
-        <a href="about.php" target=_blank class="btn btn-success">More about us </a>
+        <a href="about.php" target=_blank class="btn" style="background: #5cd63a;
+  background-image: -webkit-linear-gradient(top, #5cd63a, #1b730b);
+  background-image: -moz-linear-gradient(top, #5cd63a, #1b730b);
+  background-image: -ms-linear-gradient(top, #5cd63a, #1b730b);
+  background-image: -o-linear-gradient(top, #5cd63a, #1b730b);
+  background-image: linear-gradient(to bottom, #5cd63a, #1b730b);
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #f5fff6;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;">More about us </a>
     </div>
   </div>
 </div>
@@ -89,7 +102,20 @@
         <div class="card-body">
         <h4 class="card-title">Plants</h4>
         <p class="card-text">Let's decorate your home with some plants!</p>
-        <a href="store.php?category=Plant" class="btn btn-success" target=_blank>Let's Shop</a>
+        <a href="store.php?category=Plant" class="btn" style="background: #5cd63a;
+  background-image: -webkit-linear-gradient(top, #5cd63a, #1b730b);
+  background-image: -moz-linear-gradient(top, #5cd63a, #1b730b);
+  background-image: -ms-linear-gradient(top, #5cd63a, #1b730b);
+  background-image: -o-linear-gradient(top, #5cd63a, #1b730b);
+  background-image: linear-gradient(to bottom, #5cd63a, #1b730b);
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #f5fff6;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;">Let's Shop</a>
   </div>
 </div>
       </div>
@@ -100,7 +126,20 @@
         <div class="card-body">
         <h4 class="card-title">Pots</h4>
         <p class="card-text">Check out some beautiful pots for your plants!</p>
-        <a href="store.php?category=Pot" class="btn btn-success">Let's Shop</a>
+        <a href="store.php?category=Pot" class="btn" style="background: #5cd63a;
+  background-image: -webkit-linear-gradient(top, #5cd63a, #1b730b);
+  background-image: -moz-linear-gradient(top, #5cd63a, #1b730b);
+  background-image: -ms-linear-gradient(top, #5cd63a, #1b730b);
+  background-image: -o-linear-gradient(top, #5cd63a, #1b730b);
+  background-image: linear-gradient(to bottom, #5cd63a, #1b730b);
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #f5fff6;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;">Let's Shop</a>
   </div>
 </div>
       </div>
@@ -111,7 +150,20 @@
         <div class="card-body">
         <h4 class="card-title">Accessories</h4>
         <p class="card-text">Make plantation mess-free with handy accessories!</p>
-        <a href="store.php?category=Accessories" class="btn btn-success">Let's Shop</a>
+        <a href="store.php?category=Accessories" class="btn" style="background: #5cd63a; background-image: 
+                  -webkit-linear-gradient(top, #5cd63a, #1b730b);
+                  background-image: -moz-linear-gradient(top, #5cd63a, #1b730b);
+                  background-image: -ms-linear-gradient(top, #5cd63a, #1b730b);
+                  background-image: -o-linear-gradient(top, #5cd63a, #1b730b);
+                  background-image: linear-gradient(to bottom, #5cd63a, #1b730b);
+                  -webkit-border-radius: 9;
+                  -moz-border-radius: 9;
+                  border-radius: 9px;
+                  font-family: 'Josefin Sans', sans-serif;
+                  color: #f5fff6;
+                  font-size: 20px;
+                  padding: 10px 20px 10px 20px;
+                  text-decoration: none;">Let's Shop</a>
   </div>
 </div>
       </div>
@@ -143,7 +195,20 @@
         </p>
         <div class="text-center">
           <h5>Want to know more?</h5>
-          <a href="faq.php" target=_blank class="btn btn-success text-center">FAQs</a>
+          <a href="faq.php" target=_blank class="btn text-center" style="background: #5cd63a;
+                background-image: -webkit-linear-gradient(top, #5cd63a, #1b730b);
+                background-image: -moz-linear-gradient(top, #5cd63a, #1b730b);
+                background-image: -ms-linear-gradient(top, #5cd63a, #1b730b);
+                background-image: -o-linear-gradient(top, #5cd63a, #1b730b);
+                background-image: linear-gradient(to bottom, #5cd63a, #1b730b);
+                -webkit-border-radius: 9;
+                -moz-border-radius: 9;
+                border-radius: 9px;
+                font-family: 'Josefin Sans', sans-serif;
+                color: #f5fff6;
+                font-size: 20px;
+                padding: 10px 20px 10px 20px;
+                text-decoration: none;">FAQs</a>
         </div>
       </div>
     </div>
