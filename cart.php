@@ -22,6 +22,7 @@
     include 'DBconfig.php';
 
     if ($con) {
+        $allProductDetails = [];
         if (isset($_GET['productEdit'])) {
             $operation = $_GET['operation'];
             $id = $_GET['id'];
@@ -73,7 +74,7 @@
                         $allData = [];
                     $array = array_keys($allData);
 
-                    $allProductDetails = [];
+                    //$allProductDetails = [];
                     // $count = count($array);
                     // print_r($allData);
                     for ($i = 0; $i < count($array); $i++) {
