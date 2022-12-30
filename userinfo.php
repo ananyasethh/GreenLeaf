@@ -16,7 +16,7 @@
     $mobile=$_POST['mobile'];
     $comments=$_POST['comments'];
 
-    $query= "insert into userinfodata (user,email,mobile,comment) values ('$user', '$email', '$mobile', '$comments')";
+    $query= "insert into contactus (user,email,mobile,comment) values ('$user', '$email', '$mobile', '$comments')";
     $querypush = mysqli_query($con, $query);
 
     /*if($querypush)     #if not eshtablished
@@ -28,5 +28,5 @@
         echo '<script> alert("ERROR!"); </script>';
     }*/
     #mysqli_query($con, $query);
-    header('location:index.php');
+    header('location:contact.php');
 ?>
