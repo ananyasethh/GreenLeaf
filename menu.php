@@ -33,27 +33,27 @@
       <ul class="navbar-nav ml-auto mb-2 mb-lg-0 p-2" style="font-size: 1.3rem; gap: 1rem">
         <li class="nav-item">
           <a data-toggle="tooltip" data-placement="bottom" title="Home" style="color: #38E54D" class="nav-link active" aria-current="page" href="index.php">
-          <img src="images\home.png" alt="Home" width="25" height="25"></a>
+          <img src="images\landing.png" alt="Home" width="25" height=""></a>
         </li>
         <li class="nav-item">
           <a data-toggle="tooltip" data-placement="bottom" title="Shop" style="color: #38E54D" class="nav-link" href="store.php?category=all" target=_blank>
-          <img src="images\shop.png" alt="Shop" width="25" height="25"></a>
+          <img src="images\store.png" alt="Shop" width="25" height=""></a>
         </li>
         <li class="nav-item">
           <a data-toggle="tooltip" data-placement="bottom" title="About Us" style="color: #38E54D" class="nav-link" href="about.php" target=_blank>
-          <img src="images\about.png" alt="About" width="25" height="25"></a>
+          <img src="images\about-us.png" alt="About" width="25" height=""></a>
         </li>
         <li class="nav-item">
           <a data-toggle="tooltip" data-placement="bottom" title="Contact Us" style="color: #38E54D" class="nav-link" href="contact.php" target=_blank>
-          <img src="images\contact.png" alt="Contact" width="45" height="25"></a>
+          <img src="images\envelope.png" alt="Contact" width="40" height="" style="margin-top:0px;"></a>
         </li>
         <li class="nav-item">
           <a data-toggle="tooltip" data-placement="bottom" title="FAQ" style="color: #38E54D" class="nav-link" href="faq.php">
-          <img src="images\FAQ.png" alt="FAQ" width="40" height="30"></a>
+          <img src="images\FAQs.png" alt="FAQ" width="35" height="25"></a>
         </li>
         <li class="nav-item">
           <a data-toggle="tooltip" data-placement="bottom" title="Cart" style="color: #38E54D" class="nav-link" href="cart.php">
-            <img src="images\cart.png" alt="cart" width="40" height="40"></a>
+            <img src="images\shopping-cart.png" alt="cart" width="35" height=""></a>
         </li>
       </ul>
     </div>
