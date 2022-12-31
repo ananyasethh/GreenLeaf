@@ -32,28 +32,28 @@
       <ul class="navbar-nav ml-auto mb-2 mb-lg-0 p-2" style="font-size: 1.3rem; gap: 1rem">
         <li class="nav-item">
           <a data-toggle="tooltip" data-placement="bottom" title="Home" style="color: #38E54D" class="nav-link active" aria-current="page" href="index.php">
-            <img src="images/landing.png" alt="Home" width="30" height="" /></a>
+            <img src="images/landing.png" alt="Home" width="38" height="" style="margin-top:3px;"/></a>
         </li>
         <li class="nav-item">
           <a data-toggle="tooltip" data-placement="bottom" title="Shop" style="color: #38E54D" class="nav-link" href="store.php?category=all" target=_blank>
-            <img src="images/store.png" alt="Shop" width="28" height="" /></a>
+            <img src="images/store.png" alt="Shop" width="37" height="" style="margin-top:3px;"/></a>
         </li>
         <li class="nav-item">
           <a data-toggle="tooltip" data-placement="bottom" title="About Us" style="color: #38E54D" class="nav-link" href="about.php" target=_blank>
-            <img src="images/about-us.png" alt="About Us" width="28" height="" /></a>
+            <img src="images/about-us.png" alt="About Us" width="36" height="" style="margin-top:3px;"/></a>
         </li>
         <li class="nav-item">
           <a data-toggle="tooltip" data-placement="bottom" title="Contact Us" style="color: #38E54D" class="nav-link" href="contact.php" target=_blank>
-            <img src="images/envelope.png" alt="Contact" width="44" height="" style="margin-top: -9px;" /></a>
+            <img src="images/envelope.png" alt="Contact" width="37" height="" style="margin-top:2px;" /></a>
         </li>
         <li class="nav-item">
           <a data-toggle="tooltip" data-placement="bottom" title="FAQs" style="color: #38E54D" class="nav-link" href="faq.php">
-            <img src="images/FAQs.png" alt="FAQs" width="35" height="25" /></a>
+            <img src="images/FAQs.png" alt="FAQs" width="53" height="" style="margin-top:1.5px;"/></a>
         </li>
 
         <li class="nav-item">
           <a data-toggle="tooltip" data-placement="bottom" title="Cart" style="color: #38E54D" class="nav-link" href="cart.php">
-            <img src="images/shopping-cart.png" alt="Cart" width="35" height="" /></a>
+            <img src="images/cart.png" alt="Cart" width="36" height="" style="margin-top:4px;"/></a>
         </li>
       </ul>
     </div>
