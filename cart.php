@@ -1,5 +1,5 @@
-<html>
-
+<!DOCTYPE html>
+<html>  
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +11,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./CSS/cart.css" />
+    <link rel="icon" href="images/logo_greenLeaf.ico">
 </head>
 
 <body>
 
-    <?php include 'menu_cart.php'; ?>
-    
+    <?php include ('menu_cart.php'); ?>
     <?php
 
-    include 'DBconfig.php';
+include ('DBconfig.php');
 
     if ($con) {
         $allProductDetails = [];
@@ -27,10 +27,10 @@
             $operation = $_GET['operation'];
             $id = $_GET['id'];
             $data = mysqli_query($con, "SELECT products from cart where id = '$_COOKIE[userId]'");
-
+            
             if ($operation == "add") {
                 // mysqli_query($con)
-                print("AAya");
+                // print("AAya");
                 ($row = $data->fetch_assoc());
                 // print_r($data->fetch_assoc());
                 $allData = get_object_vars(json_decode($row['products']));
@@ -61,7 +61,13 @@
                     mysqli_query($con, "UPDATE cart set products = '$putData' where id = '$_COOKIE[userId]'");
                 }
             }
-            header("Location: cart.php");
+            // echo "BYE FRIENDS";
+
+                echo "<script> window.location.href = 'cart.php' </script> ";
+
+            //header("Location: cart.php");
+            
+            // echo 'window.location = "cart.php";';
         } else if (isset($_COOKIE['userId'])) {
             $data = mysqli_query($con, "SELECT products from cart where id = '$_COOKIE[userId]'");
             // echo ($_COOKIE['userId']);
@@ -137,6 +143,7 @@
                         <input placeholder="Enter Name" name="name" type="text"/>
                         <input placeholder="Enter Email" name="email" type="email" />
                         <input placeholder="Enter Mobile Number" name="mobile" type="text" maxlength="10" minlength="10"/>
+                        <button class='btn btn-success' type='submit' name='cButton' value='check' style='color: white;'>CHECK</button> 
                         <input placeholder="Enter Pincode" name="pincode" type="text" maxlength="6"/>
                         <textarea placeholder=" Address" name="address"></textarea>
                         
