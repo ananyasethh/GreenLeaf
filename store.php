@@ -9,7 +9,8 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"><link rel="stylesheet" type="text/css" href="./CSS/store.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./CSS/store-style.css"/>
   <link rel="icon" href="images/logo_greenLeaf.ico">
 </head>
 <body>
@@ -118,7 +119,7 @@
 
 <?php include 'menu.php'; ?>
 
-<div style="padding-top: 100px; background-color: #ADE792;" class="categoryContainer">
+<div style="padding-top: 105px; background-color: #8cd968;" class="categoryContainer">
     <span onclick="onClick();" <?php if ($activeCat === "all") echo 'class="active"' ?>>All</span>
     <span onclick="onClick('Plant');" <?php if ($activeCat === "Plant") echo 'class="active"' ?> >Plants</span>
     <span onclick="onClick('Pot');" <?php if ($activeCat === "Pot") echo 'class="active"' ?>>Pots</span>
