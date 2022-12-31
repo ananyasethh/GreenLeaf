@@ -65,7 +65,7 @@
     </div>
     <div class="col-lg-6 col-md-6 col-12">
       <h2 class="display-4">We are GreenLeaf.</h2>
-      <p class="py-3">An e-Nursery website with a mission to present to you selected indoor and 
+      <p class="py-3" style="line-height:1.75;">An e-Nursery website with a mission to present to you selected indoor and 
         outdoor plants, tools and accessories, and beautiful planting pots to showcase your home's 
         greenery. Taste the essence of living in a greener world with the motto of <em> Go Green! 
           Grow Green! Live Green! </em>
@@ -181,11 +181,11 @@
     <div class="container-fluid">
       <div class="px-5">
         <h4>WHICH INDOOR PLANTS ARE THE EASIEST TO CARE FOR?</h4>
-        <p>Pothos, Aglaonema, Sansevieria, Dracaena Lisa, Spider, Corn, Iron, ZZ plants,
+        <p style="line-height:2;">Pothos, Aglaonema, Sansevieria, Dracaena Lisa, Spider, Corn, Iron, ZZ plants,
           Bird's Nest fern, Cacti, Succulents. </p>
         <br>
         <h4>SHOULD I MIST MY PLANTS? WHICH PLANTS LIKE TO HAVE LEAVES MISTED?</h4>
-        <p>◉ Plants like Bird of Paradise, Philodendron, Fern, Iron plant, Bella Palm will enjoy
+        <p style="line-height:2;">◉ Plants like Bird of Paradise, Philodendron, Fern, Iron plant, Bella Palm will enjoy
           if you mist their leaves often. <br>◉ Plants like Bird of Paradise, Philodendron, Fern, Iron
           plant, Bella Palm will enjoy if you mist their leaves often.<br>◉ Plants like Snake, ZZ, Yucca,
           Jade prefer not to be misted. <br> Heat dries out the air the most, and misting pants that
