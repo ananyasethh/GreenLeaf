@@ -1,27 +1,31 @@
+*
+{
+  font-family: 'Josefin Sans', sans-serif;
+} 
 .categoryContainer {
   display: flex;
   justify-content: center;
   padding: 1rem;
   gap: 1rem;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   margin-bottom: 1rem;
 }
 
 .categoryContainer > span {
   font-size: 1rem;
-  font-family: "Roboto", "sans-serif";
-  border: 1px solid grey;
-  width: 120px;
+  border: 1px solid #0a9d0a;
+  width: 130px;
   padding: 0.2rem;
   text-align: center;
   cursor: pointer;
   font-weight: 600;
-  border-radius: 5px;
+  border-radius: 8px;
+  color:#2b5603;
 }
 
 .categoryContainer .active {
-  background-color: black;
-  color: white;
+  background-color: rgb(16, 139, 32);
+  color: white; 
 }
 
 .store {
@@ -61,26 +65,35 @@
 .contentContainer .title {
   font-weight: bold;
   font-size: 1.3rem;
-  font-family: "Roboto", sans-serif;
   margin-bottom: 10px;
 }
 
 .contentContainer .priceContainer {
   font-weight: bold;
   font-size: 1.3rem;
-  font-family: "Roboto", sans-serif;
   margin-bottom: 10px;
   color: rgb(57, 56, 56);
 }
 
 .contentContainer > button {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem; 
   /* width: 200px;
    */
   border: none;
-  background-color: black;
-  color: whitesmoke;
-  font-weight: bold;
+  /* background-color: rgb(25, 167, 58); */
+  /* color: whitesmoke; */
+  /* font-weight: bold; */
   font-size: 1.1rem;
   cursor: pointer;
+  border-radius: 8px;
+  background: #34d95a;
+  background-image: -webkit-linear-gradient(top, #34d95a, #0d7317);
+  background-image: -moz-linear-gradient(top, #34d95a, #0d7317);
+  background-image: -ms-linear-gradient(top, #34d95a, #0d7317);
+  background-image: -o-linear-gradient(top, #34d95a, #0d7317);
+  background-image: linear-gradient(to bottom, #34d95a, #0d7317);
+  -webkit-border-radius: 18;
+  -moz-border-radius: 18;
+  color: #ffffff;
+  text-decoration: none;
 }
