@@ -16,7 +16,7 @@
 
 <body>
 
-    <?php include ('menu_cart.php'); ?>
+    <?php //include ('menu_cart.php'); ?>
     <?php
 
 include ('DBconfig.php');
@@ -166,12 +166,8 @@ else
                 <div>
                     <!-- Pushing data to cartInfo.php -->
                     <form action='cartInfo.php' method='post' class='form-container'>
-                        <input placeholder='Enter Mobile Number' name='mobile' type='text' maxlength='10' minlength='10' value='<?php echo @$mobile?>' onfocus="this.value=''"/>
-                        <button class='btn btn-success' type='submit' name='cButton' value='check' style="color: white; font-weight: bold;">CHECK</button> 
-                        <input placeholder='Enter Name' name='name' type='text' value='<?php echo @$name?>' onfocus="this.value=''"/>
-                        <input placeholder='Enter Email' name='email' type='email' value='<?php echo @$email?>' onfocus="this.value=''"/>
-                        <input placeholder='Enter Pincode' name='pincode' type='text' maxlength='6' value='<?php echo @$pincode ?>' onfocus="this.value=''"/>
-                        <textarea placeholder=' Enter Address' name='address' onfocus="this.value=''"><?php echo @$address ?></textarea>
+                        <input placeholder='OLD PAGE. NON FUNCTIONAL' name='pincode' type='text' maxlength='6' value='<?php echo @$pincode ?>' onfocus="this.value=''"/>
+                        <textarea placeholder='OLD PAGE. NON FUNCTIONAL' name='address' onfocus="this.value=''"><?php echo @$address ?></textarea>
                         <button class='btn btn-success' type='submit' name='cButton' value='save' style="color: white; font-weight: bold;">SAVE</button>
                     </form>
                 </div>
