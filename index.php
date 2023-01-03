@@ -125,8 +125,8 @@
 
         <div class="col-lg-4 col-md-4 col-12">
           <div class="card">
-            <img class="card-img-top" src="images\Pots.jpg" alt="Pots">
-            <div class="card-body">
+            <img class="card-img-top" src="images\Pots.png" alt="Pots">
+            <div style="padding-top:61px;" class="card-body">
               <h4 class="card-title">Pots</h4>
               <p class="card-text">Check out some beautiful pots for your plants!</p>
               <a href="store.php?category=Pot" class="btn" style="background: #5cd63a;
@@ -174,6 +174,87 @@
     </div>
   </section>
 
+  <!-- From the Blog -->
+  <section class="my-5">
+    <div class="py-5">
+      <h2 class="text-center">From The Blog</h2>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card group-images">
+            <img class="card-img-top" src="images/blog1.1.jpg" alt="Blog1">
+            <div class="card-body">
+              <h4 class="card-title text-center">6 Stylish Plants That Help Clean Toxic From The Air</h4>
+              <a href="Blog1.php" class="btn" target=_blank style="background: #5cd63a;
+                       background-image: -webkit-linear-gradient(top, #5cd63a, #1b730b);
+                       background-image: -moz-linear-gradient(top, #5cd63a, #1b730b);
+                       background-image: -ms-linear-gradient(top, #5cd63a, #1b730b);
+                       background-image: -o-linear-gradient(top, #5cd63a, #1b730b);
+                       background-image: linear-gradient(to bottom, #5cd63a, #1b730b);
+                       -webkit-border-radius: 9;
+                       -moz-border-radius: 9;
+                       border-radius: 9px;
+                       font-family: 'Josefin Sans', sans-serif;
+                       color: #f5fff6;
+                       font-size: 20px;
+                       padding: 10px 20px 10px 20px;
+                       text-decoration: none;">Read Now ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img class="card-img-top" src="images\Pots.png" alt="Pots">
+            <div style="padding-top:61px;" class="card-body">
+              <h4 class="card-title">Pots</h4>
+              <p class="card-text">Check out some beautiful pots for your plants!</p>
+              <a href="store.php?category=Pot" class="btn" style="background: #5cd63a;
+                       background-image: -webkit-linear-gradient(top, #5cd63a, #1b730b);
+                       background-image: -moz-linear-gradient(top, #5cd63a, #1b730b);
+                       background-image: -ms-linear-gradient(top, #5cd63a, #1b730b);
+                       background-image: -o-linear-gradient(top, #5cd63a, #1b730b);
+                       background-image: linear-gradient(to bottom, #5cd63a, #1b730b);
+                       -webkit-border-radius: 9;
+                       -moz-border-radius: 9;
+                       border-radius: 9px;
+                       font-family: 'Josefin Sans', sans-serif;
+                       color: #f5fff6;
+                       font-size: 20px;
+                       padding: 10px 20px 10px 20px;
+                       text-decoration: none;">Let's Shop</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img class="card-img-top" src="images\Accessories.jpg" alt="Accessories">
+            <div class="card-body">
+              <h4 class="card-title">Accessories</h4>
+              <p class="card-text">Make plantation mess-free with handy accessories!</p>
+              <a href="store.php?category=Accessories" class="btn" style="background: #5cd63a; background-image: 
+                      -webkit-linear-gradient(top, #5cd63a, #1b730b);
+                      background-image: -moz-linear-gradient(top, #5cd63a, #1b730b);
+                      background-image: -ms-linear-gradient(top, #5cd63a, #1b730b);
+                      background-image: -o-linear-gradient(top, #5cd63a, #1b730b);
+                      background-image: linear-gradient(to bottom, #5cd63a, #1b730b);
+                      -webkit-border-radius: 9;
+                      -moz-border-radius: 9;
+                      border-radius: 9px;
+                      font-family: 'Josefin Sans', sans-serif;
+                      color: #f5fff6;
+                      font-size: 20px;
+                      padding: 10px 20px 10px 20px;
+                      text-decoration: none;">Let's Shop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
   <!-- FAQ -->
 
   <section class="my-5">
