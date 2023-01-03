@@ -1,0 +1,25 @@
+IGNORE THIS FILE - TEST PROCEDURE BY ARPAN BHATTACHARYA
+
+<?php
+    $name = array();
+    $email = array();
+    $mobile = array();
+    $pincode = array();
+    $address = array();
+
+    if($_REQUEST['return']=="send")    //when data comes back from cartInfo.php
+    {
+        $mobile = $_REQUEST['mobile'];
+        $name = $_REQUEST['name'];
+        $email = $_REQUEST['email'];
+        $address = $_REQUEST['address'];
+        $pincode = $_REQUEST['pincode'];
+    }
+?>
+
+<div>
+    <?php
+        echo $email;
+        echo $name;
+    ?>
+</div>
