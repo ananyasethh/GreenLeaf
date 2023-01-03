@@ -115,7 +115,7 @@ include ('DBconfig.php');
     }       
 
     ?>
-
+    
     <script>
         updateOrder = (id) => {
             console.log(id, "Order id is coming here");
@@ -128,37 +128,60 @@ include ('DBconfig.php');
         }
     </script>
 
-    <div class="cart-container">
+<?php
+//include 'DBconfig.php';
+//include 'menu.php';
 
+if($_REQUEST['return']=="send")    //when data comes back from cartInfo.php
+{
+    $name = array();
+    $email = array();
+    $mobile = array();
+    $pincode = array();
+    $address = array();
+
+    $mobile = $_REQUEST['mobile'];
+    $name = $_REQUEST['name'];
+    $email = $_REQUEST['email'];
+    $address = $_REQUEST['address'];
+    $pincode = $_REQUEST['pincode'];
+}
+else
+{
+    // $name = array[];
+    // $email = array[];
+    // $mobile = array[];
+    // $pincode = array[];
+    // $address = array[];
+}
+?>
+
+    <div class="cart-container">
         <div class="shipping-details">
             <div class="content-wrapper">
-
                 <div class="top">
                     <span>Shipping Details</span>
                     <!-- <button name="">Save</button>  -->
                 </div>
                 <div>
                     <!-- Pushing data to cartInfo.php -->
-                    <form action="cartInfo.php" method="post" class="form-container">
-                        <input placeholder="Enter Name" name="name" type="text"/>
-                        <input placeholder="Enter Email" name="email" type="email" />
-                        <input placeholder="Enter Mobile Number" name="mobile" type="text" maxlength="10" minlength="10"/>
-                        <button class='btn btn-success' type='submit' name='cButton' value='check' style='color: white;'>CHECK</button> 
-                        <input placeholder="Enter Pincode" name="pincode" type="text" maxlength="6"/>
-                        <textarea placeholder=" Address" name="address"></textarea>
-                        
-                        <button class="btn btn-success" type="submit" name="save" style="color: black; font-weight: bold;">SAVE</button>
+                    <form action='cartInfo.php' method='post' class='form-container'>
+                        <input placeholder='Enter Mobile Number' name='mobile' type='text' maxlength='10' minlength='10' value='<?php echo @$mobile?>' onfocus="this.value=''"/>
+                        <button class='btn btn-success' type='submit' name='cButton' value='check' style="color: white; font-weight: bold;">CHECK</button> 
+                        <input placeholder='Enter Name' name='name' type='text' value='<?php echo @$name?>' onfocus="this.value=''"/>
+                        <input placeholder='Enter Email' name='email' type='email' value='<?php echo @$email?>' onfocus="this.value=''"/>
+                        <input placeholder='Enter Pincode' name='pincode' type='text' maxlength='6' value='<?php echo @$pincode ?>' onfocus="this.value=''"/>
+                        <textarea placeholder=' Enter Address' name='address' onfocus="this.value=''"><?php echo @$address ?></textarea>
+                        <button class='btn btn-success' type='submit' name='cButton' value='save' style="color: white; font-weight: bold;">SAVE</button>
                     </form>
-
                 </div>
-                <div class="order-instruction">
+                <!-- <div class="order-instruction">
                     <div class="order-top">
                         <span>Order Instruction</span>
                         <button>Add</button>
                     </div>
                     <input placeholder="Please enter the additional details" />
-                </div>
-
+                </div> -->
             </div>
         </div>
         <div class="cart">
@@ -196,12 +219,7 @@ include ('DBconfig.php');
                 <h3>₹ <?= $totalAmount ?>
                 </h3>
             </div>
-
         </div>
-
-
     </div>
-
 </body>
-
 </html>
