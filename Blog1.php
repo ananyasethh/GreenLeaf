@@ -32,7 +32,7 @@
           window in your home, we've found a purifying plant to fit every personality and lifestyle, from the 
           jet-setting traveler to the chic, trendy DIY lover.</p>
       </div>
-
+  </div>
       <section>
     <div>
       <h2 style="padding-left:15.5%; padding-top:2%; padding-bottom:1.75%; color:#367E18">BOSTON FERN - Nephrolepis Exaltata</h2>
