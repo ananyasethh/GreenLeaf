@@ -300,7 +300,7 @@
             <img class="card-img-top" src="images/blog1.1.jpg" alt="Blog1">
             <div style="padding-top:14.5%;" class="card-body">
               <h4 class="card-title">6 Stylish Plants That Help Clean Toxic From The Air</h4>
-              <a href="Blog1.php" class="btn" target=_blank style="background: #5cd63a;
+              <a href="Blog1.php" class="btn" style="background: #5cd63a;
                        background-image: -webkit-linear-gradient(top, #5cd63a, #1b730b);
                        background-image: -moz-linear-gradient(top, #5cd63a, #1b730b);
                        background-image: -ms-linear-gradient(top, #5cd63a, #1b730b);
