@@ -184,8 +184,8 @@
         <div class="col-lg-4 col-md-4 col-12">
           <div class="card group-images">
             <img class="card-img-top" src="images/blog1.1.jpg" alt="Blog1">
-            <div class="card-body">
-              <h4 class="card-title text-center">6 Stylish Plants That Help Clean Toxic From The Air</h4>
+            <div style="padding-top:14.5%;" class="card-body">
+              <h4 class="card-title">6 Stylish Plants That Help Clean Toxic From The Air</h4>
               <a href="Blog1.php" class="btn" target=_blank style="background: #5cd63a;
                        background-image: -webkit-linear-gradient(top, #5cd63a, #1b730b);
                        background-image: -moz-linear-gradient(top, #5cd63a, #1b730b);
@@ -206,11 +206,10 @@
 
         <div class="col-lg-4 col-md-4 col-12">
           <div class="card">
-            <img class="card-img-top" src="images\Pots.png" alt="Pots">
-            <div style="padding-top:61px;" class="card-body">
-              <h4 class="card-title">Pots</h4>
-              <p class="card-text">Check out some beautiful pots for your plants!</p>
-              <a href="store.php?category=Pot" class="btn" style="background: #5cd63a;
+            <img class="card-img-top" src="images/blog2.0.jpg" alt="Blog2">
+            <div style="padding-top:12.5%;" class="card-body">
+              <h4 class="card-title">Tree & Forest Activities To Do With Children</h4>
+              <a href="Blog2.php" class="btn" style="background: #5cd63a;
                        background-image: -webkit-linear-gradient(top, #5cd63a, #1b730b);
                        background-image: -moz-linear-gradient(top, #5cd63a, #1b730b);
                        background-image: -ms-linear-gradient(top, #5cd63a, #1b730b);
@@ -223,18 +222,17 @@
                        color: #f5fff6;
                        font-size: 20px;
                        padding: 10px 20px 10px 20px;
-                       text-decoration: none;">Let's Shop</a>
+                       text-decoration: none;">Read Now ></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-4 col-12">
           <div class="card">
-            <img class="card-img-top" src="images\Accessories.jpg" alt="Accessories">
-            <div class="card-body">
-              <h4 class="card-title">Accessories</h4>
-              <p class="card-text">Make plantation mess-free with handy accessories!</p>
-              <a href="store.php?category=Accessories" class="btn" style="background: #5cd63a; background-image: 
+            <img class="card-img-top" src="images/blog3.0.jpg" alt="Blog3">
+            <div style="padding-top:20%;" class="card-body">
+              <h4 class="card-title">Reviews</h4>
+              <a href="exhibit.php" class="btn" style="background: #5cd63a; background-image: 
                       -webkit-linear-gradient(top, #5cd63a, #1b730b);
                       background-image: -moz-linear-gradient(top, #5cd63a, #1b730b);
                       background-image: -ms-linear-gradient(top, #5cd63a, #1b730b);
@@ -247,7 +245,7 @@
                       color: #f5fff6;
                       font-size: 20px;
                       padding: 10px 20px 10px 20px;
-                      text-decoration: none;">Let's Shop</a>
+                      text-decoration: none;">VISIT</a>
             </div>
           </div>
         </div>
