@@ -177,7 +177,7 @@
   <!-- Our Gallery -->
   <section class="my-5">
     <div class="py-5">
-      <h2 class="text-center">Our Gallery</h2>
+      <h2 class="text-center">La Galeria</h2>
     </div>
     <div class="container-fluid">
       <div class="row">
@@ -240,7 +240,7 @@
   <!-- From the Blog -->
   <section class="my-5">
     <div class="py-5">
-      <h2 class="text-center">From The Blog</h2>
+      <h2 class="text-center">From Our Blog</h2>
     </div>
     <div class="container-fluid">
       <div class="row">
