@@ -18,6 +18,7 @@
 
   <?php include 'dbSupport.php'; ?>
   <?php include 'menu.php'; ?>
+  <?php include 'top-button.php' ?>
 
   <div id="demo" class="carousel slide" data-ride="carousel">
     <ul class="carousel-indicators">
@@ -52,7 +53,6 @@
   <a class="carousel-control-next" href="#demo" data-slide="next">
     <span class="carousel-control-next-icon"></span>
   </a>
-  </div>
 
   <!-- ABOUT US -->
 
@@ -101,7 +101,24 @@
       <div class="row">
         <div class="col-lg-4 col-md-4 col-12">
           <div class="card group-images">
-            <img class="card-img-top" src="images\plants.jpg" alt="Plants">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+          <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="card-img-top" src="images/Plants1.jpg" alt="Plants">
+          </div>
+          <div class="carousel-item">
+          <img class="card-img-top" src="images/Plants2.png" alt="Plants">
+          </div>
+          <div class="carousel-item">
+          <img class="card-img-top" src="images/Plants3.png" alt="Plants">
+          </div>
+          </div>
+          </div>
             <div class="card-body">
               <h4 class="card-title">Plants</h4>
               <p class="card-text">Let's decorate your home with some plants!</p>
@@ -125,8 +142,25 @@
 
         <div class="col-lg-4 col-md-4 col-12">
           <div class="card">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+          <div class="carousel-inner">
+          <div class="carousel-item active">
             <img class="card-img-top" src="images\Pots.png" alt="Pots">
-            <div style="padding-top:61px;" class="card-body">
+          </div>
+          <div class="carousel-item">
+          <img class="card-img-top" src="images/Pots2.jpg" alt="Pots">
+          </div>
+          <div class="carousel-item">
+          <img class="card-img-top" src="images/Pots3.png" alt="Pots">
+          </div>
+          </div>
+          </div>
+            <div style="padding-top:4.25%;" class="card-body">
               <h4 class="card-title">Pots</h4>
               <p class="card-text">Check out some beautiful pots for your plants!</p>
               <a href="store.php?category=Pot" class="btn" style="background: #5cd63a;
@@ -149,7 +183,24 @@
 
         <div class="col-lg-4 col-md-4 col-12">
           <div class="card">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+          <div class="carousel-inner">
+          <div class="carousel-item active">
             <img class="card-img-top" src="images\Accessories.jpg" alt="Accessories">
+          </div>
+          <div class="carousel-item">
+            <img class="card-img-top" src="images/accessories1.jpg" alt="Accessories">
+          </div>
+          <div class="carousel-item">
+            <img class="card-img-top" src="images/accessories2.jpg" alt="Accessories">
+          </div>
+          </div>
+          </div>
             <div class="card-body">
               <h4 class="card-title">Accessories</h4>
               <p class="card-text">Make plantation mess-free with handy accessories!</p>
