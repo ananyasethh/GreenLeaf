@@ -174,6 +174,69 @@
     </div>
   </section>
 
+  <!-- Our Gallery -->
+  <section class="my-5">
+    <div class="py-5">
+      <h2 class="text-center">Our Gallery</h2>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card group-images">
+            <img class="card-img-top" src="images/gallery1.png" alt="Gallery">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img class="card-img-top" src="images/gallery2.jpg" alt="Gallery">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img class="card-img-top" src="images/gallery3.png" alt="Gallery">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card py-3" style="border:none;">
+            <img class="card-img-top" src="images/gallery4.jpg" alt="Gallery">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card py-3" style="border:none;">
+            <img class="card-img-top" src="images/gallery5.jpg" alt="Gallery">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card py-3" style="border:none;">
+            <img class="card-img-top" src="images/gallery6.jpg" alt="Gallery">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img class="card-img-top" src="images/gallery7.jpeg" alt="Gallery">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img class="card-img-top" src="images/gallery8.jpg" alt="Gallery">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img class="card-img-top" src="images/gallery9.jpeg" alt="Gallery">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- From the Blog -->
   <section class="my-5">
     <div class="py-5">
