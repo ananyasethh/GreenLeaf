@@ -63,9 +63,9 @@ include ('DBconfig.php');
             }
             // echo "BYE FRIENDS";
 
-                echo "<script> window.location.href = 'cart.php' </script> ";
+                // echo "<script> window.location.href = 'cart.php' </script> ";
 
-            //header("Location: cart.php");
+            header("Location: cart.php");
             
             // echo 'window.location = "cart.php";';
         } else if (isset($_COOKIE['userId'])) {
@@ -132,7 +132,7 @@ include ('DBconfig.php');
 //include 'DBconfig.php';
 //include 'menu.php';
 
-if($_REQUEST['return']=="send")    //when data comes back from cartInfo.php
+if(isset($_REQUEST['return']) && $_REQUEST['return']=="send")    //when data comes back from cartInfo.php
 {
     $name = array();
     $email = array();
