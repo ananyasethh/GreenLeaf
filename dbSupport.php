@@ -86,7 +86,7 @@ else    #if connection established
             $query[28] = "INSERT INTO product VALUES('pl14','Bird of Paradise',1393,'Plant','https://plantila.in/wp-content/uploads/2022/10/bird-of-paradise.webp');";
             $query[29] = "INSERT INTO product VALUES('pl15','Philodendron',926,'Plant','https://www.bhg.com/thmb/1KVFqE27wZJfhH4C-71n912dLp0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/brasil-philodendron-209ea27f-4f973ad7d0fa4e34b458b6f522168927.jpg');";
             $query[30] = "INSERT INTO product VALUES('pl16','ZZ Plant',540,'Plant','https://cdn.shopify.com/s/files/1/0482/2568/1571/products/PKP04025-Copy_1800x1800.jpg?v=1647425752');";
-            $query[31] = "INSERT INTO product VALUES('pl17','Firm Plant',299,'Plant','https://m.media-amazon.com/images/I/81FXKaUlSIL.jpg');";
+            $query[31] = "INSERT INTO product VALUES('pl17','Fern Plant',299,'Plant','https://m.media-amazon.com/images/I/81FXKaUlSIL.jpg');";
             $query[32] = "INSERT INTO product VALUES('pl18','Yucca',299,'Plant','https://www.plantsguru.com/image/cache/foliage-plants/yucca%20variegated-800x800.jpg');";
             $query[33] = "INSERT INTO product VALUES('pl19','Aspidistra Elatior',499,'Plant','https://www.plantsguru.com/image/cache/Geo%20Bags/Aspidistra-Cast-Iron-Plant-800x800.jpg');";
             $query[34] = "INSERT INTO product VALUES('pl20','Bella Palm',221,'Plant','https://i.etsystatic.com/23697056/r/il/4894b3/2541050909/il_fullxfull.2541050909_2mc8.jpg');";
@@ -124,14 +124,49 @@ else    #if connection established
             $query[64] = "INSERT INTO product VALUES('po20','Honeycomb Ceramic Planter',269,'Pot','https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQxDBK_jhm6hMOcYTc4te2R89Iw2QiZKpXURYwsDA98qR2zc262ZKLonxpsBZPrnmw4oIgqunRv2K13ZByzYsn7DDWcIrDbNM-IxqkkVhlQBZc4Ma00FXUrQg&usqp=CAE');";
             $query[65] = "INSERT INTO product VALUES('po21','Nestasia Ceramic Planter',490,'Pot','https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQA60HKNydmU2o9sHoMzmD03ZvdqSw2Qbtz2Mtu5vTfROa_QffGo2IW9JVb3_N24N7TwfAwGvlBEAwt33sO8aVPL77kbNOTaeuONUFkZZr-&usqp=CAE');";
            
+            $query[66] = "INSERT INTO product VALUES('pl22','Azalea',499,'Plant','https://www.myplantmytaste.com/wp-content/uploads/2020/09/azalea-plant.jpg');";
+            $query[67] = "INSERT INTO product VALUES('pl23','Hibiscus',399,'Plant','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-plants-hibiscus-gudhal-flower-hybrid-any-color-plant-16968930951308_600x.jpg?v=1634221721');";
+            $query[68] = "INSERT INTO product VALUES('pl24','Dahlia',199,'Plant','https://cdn.shopify.com/s/files/1/0555/8363/7660/files/Urban-plants-Dahlia-plants-flower-plants.jpg?v=1646701659');";
+            $query[69] = "INSERT INTO product VALUES('pl25','Marigold',299,'Plant','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-g-african-marigold-yellow-plant_512x512.jpg?v=1634994003');";
+            $query[70] = "INSERT INTO product VALUES('pl26','Night Blooming Jasmine',349,'Plant','https://garden.ballatha.com/image/cache/catalog/Garden/Plants/JASMINE%20PLANTS/nurserylive-raat-ki-rani-raat-rani-night-blooming-jasmine-plant_520x520-520x520.jpg');";
+            $query[71] = "INSERT INTO product VALUES('pl27','Portulaca, 10 O Clock (Pink)',199,'Plant','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-g-portulaca-oleracea-10-O-clock-pink-plant.jpg?v=1634226669');";
+            $query[72] = "INSERT INTO product VALUES('pl28','Betel Leaf Plant (Magai Paan) (Piper betle)',249,'Plant','https://ashokavanam.com/uploads/product/photo/134/Betel-Leaf-Maghai-Paan-Peppyflora-Product-01-a-moz_400x400.jpeg');";
+            $query[73] = "INSERT INTO product VALUES('pl29','Button Rose',299,'Plant','https://m.media-amazon.com/images/I/81vFJ0o-QQL._SL1500_.jpg');";
+            $query[74] = "INSERT INTO product VALUES('pl30','Syngonium Green',199,'Plant','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-g-syngonium-green-plant-1.jpg?v=1635748764');";
+            $query[75] = "INSERT INTO product VALUES('pl31','Tulip',890,'Plant','https://cdn.shopify.com/s/files/1/2690/0106/products/DSCF4358_600x.jpg?v=1638597819');";
+            $query[76] = "INSERT INTO product VALUES('pl32','Schefflera Variegated Plant',479,'Plant','https://www.nationbloom.com/img/202105250222201.jpg');";
+            $query[77] = "INSERT INTO product VALUES('pl33','Lemon Grass',180,'Plant','https://m.media-amazon.com/images/I/51MGszA4NEL._SL1024_.jpg');";
+            $query[78] = "INSERT INTO product VALUES('pl34','Rubber Plant',499,'Plant','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-g-rubber-tree-rubber-plant-ficus-elastica-black-prince-burgundy-plant.jpg?v=1634227719');";
+            $query[79] = "INSERT INTO product VALUES('pl35','Kalanchoe Pumila Silver Grey',249,'Plant','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-kalanchoe-pumila-silver-grey-plant.jpg?v=1634222875');";
+            $query[80] = "INSERT INTO product VALUES('pl36','Sunflower',199,'Plant','https://unbeleafable.ph/wp-content/uploads/2021/01/Untitled-design-1.png');";
+            $query[81] = "INSERT INTO product VALUES('pl37','Croton Plant',399,'Plant','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-g-croton-plant-codiaeum-variegatum-captain-kidd-plant.jpg?v=1636463636');";
+            $query[82] = "INSERT INTO product VALUES('pl38','Lantana Camara Plant',349,'Plant','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-plants-lantana-camara-any-color-plant-16968992784524.jpg?v=1634226997');";
+            $query[83] = "INSERT INTO product VALUES('pl39','Asparagus Meyeri',299,'Plant','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-g-asparagus-meyeri-plant.jpg?v=1636458595');";
+            $query[84] = "INSERT INTO product VALUES('pl40','Dwarf Pink Ixora',370,'Plant','https://cdn.shopify.com/s/files/1/0284/2450/products/Dwarf_Pink_Ixora_800x.jpg?v=1591538918');";
+            $query[85] = "INSERT INTO product VALUES('pl41','Bonsai',1099,'Plant','https://empire-s3-production.bobvila.com/articles/wp-content/uploads/2021/05/types_of_bonsai_trees_3.jpg');";
+            $query[86] = "INSERT INTO product VALUES('pl42','Alworthia Black Gem',499,'Plant','https://m.media-amazon.com/images/I/41xFh4iJuML._SL1024_.jpg');";
+
+            $query[87] = "INSERT INTO product VALUES('po22','3 Inch (8 cm) Square Glass Vase',149,'Pot','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-planters-3-inch-8-cm-square-glass-vase-16968468037772.jpg?v=1634207606');";
+            $query[88] = "INSERT INTO product VALUES('po23','Bonsai Square Ceramic Pot',499,'Pot','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-planters-5-1-inch-13-cm-bonsai-square-ceramic-pot-brown-16968496283788_700x700.jpg?v=1634209920');";
+            $query[89] = "INSERT INTO product VALUES('po24','Polka Railing Oval (Pack of 5)',999,'Pot','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-g-12-inch-30-cm-polka-railing-oval-metal-planter-pack.jpg?v=1664268478');";
+            $query[90] = "INSERT INTO product VALUES('po25','Cylindrical Glass Pot (Pack of 3)',999,'Pot','https://m.media-amazon.com/images/I/71gKwkrbiAL._AC_SL1500_.jpg');";
+            $query[91] = "INSERT INTO product VALUES('po26','Handi Shape Round Ceramic Pot (Pack of 5)',509,'Pot','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-3-inch-handi-shape-round-ceramic-pots-pack-of-five.jpg?v=1634208197');";
+            $query[92] = "INSERT INTO product VALUES('po27','Elephant Shape Pot (Set of 2)',599,'Pot','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-planters-3-7-inch-9-cm-elephant-shape-marble-finish-ceramic-pot-white-16968461451404_512x512.jpg?v=1634207908');";
+            $query[93] = "INSERT INTO product VALUES('po28','Face Planters',799,'Pot','https://i.pinimg.com/736x/25/4b/f4/254bf4670138401f6c2259a5060f36dc.jpg');";
+
+
+          
+            $query[94] = "INSERT INTO product VALUES('ac22','Plant Stand for Balcony',740,'Accessories','https://sc04.alicdn.com/kf/Heb92e32bfa684ba784408399c5a0437dX.jpg');";
+            $query[95] = "INSERT INTO product VALUES('ac23','Tall Plant Stand',2999,'Accessories','https://m.media-amazon.com/images/I/61rx8u8YNML._AC_SL1001_.jpg');";
+
            
-           $query[66] = "CREATE TABLE cart
+           $query[96] = "CREATE TABLE cart
             (
             id varchar(100),
             products varchar(1000)
             );";
 
-            $query[67] = "CREATE TABLE customer
+            $query[97] = "CREATE TABLE customer
     (
         name varchar(40),
         mobile varchar(10) PRIMARY KEY,
@@ -140,7 +175,7 @@ else    #if connection established
         pincode varchar(6)
     );";
 
-        $query[68] = "CREATE TABLE contactus
+        $query[98] = "CREATE TABLE contactus
         (
             user VARCHAR(40),
             email VARCHAR(50),
@@ -150,7 +185,7 @@ else    #if connection established
         ";
 
             #execution
-            for ($i = 0; $i <= 68; $i++) 
+            for ($i = 0; $i <= 98; $i++) 
             {
                 mysqli_query($con, $query[$i]);
             }
