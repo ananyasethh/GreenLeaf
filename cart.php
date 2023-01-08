@@ -129,24 +129,6 @@ include ('DBconfig.php');
             window.location.href = "cart.php?productEdit=true&operation=sub&id=" + id;
         }
 
-        placeOrder = () => {
-            console.log("Order is placed", <?php echo $totalAmount ?>);
-            var option = {
-                key: "rzp_test_1DP5mmOlF5G5ag",
-                amount: $totalAmount * 100,
-                name: "Acme Corp",
-                description: "Test Transaction",
-                image: "images/logo_greenLeaf.ico",
-                handler: function (response) {
-                    // alert(response.razorpay_payment_id);
-                    header("Location: cart.php");
-                },
-                currency: "INR",
-
-            }
-            var rzp1 = new Razorpay(option);
-            rzp1.open();
-        }
 
     </script>
 
@@ -188,7 +170,7 @@ else
                 <div>
                     <!-- Pushing data to cartInfo.php -->
                     <form action='cartInfo.php' method='post' class='form-container'>
-                        <input placeholder='Enter Mobile Number' name='mobile' type='text' maxlength='10' minlength='10' value='<?php echo @$mobile?>' onfocus="this.value=''"/>
+                        <input placeholder='Enter Mobile Number' name='mobile' type='text' maxlength='10' minlength='10' value='<?php echo @$mobile?>' onfocus="this.value=''" required/>
                         <button class='btn btn-success' type='submit' name='cButton' value='check' style="color: white; font-weight: bold;">CHECK</button> 
                         <input placeholder='Enter Name' name='name' type='text' value='<?php echo @$name?>' onfocus="this.value=''"/>
                         <input placeholder='Enter Email' name='email' type='email' value='<?php echo @$email?>' onfocus="this.value=''"/>
@@ -249,7 +231,7 @@ else
             var option = {
                 key: "rzp_test_1DP5mmOlF5G5ag",
                 amount: <?php echo $totalAmount * 100?>,
-                name: "Acme Corp",
+                name: "GreenLeaf",
                 description: "Test Transaction",
                 image: "images/logo_greenLeaf.ico",
                 handler: function (response) {
