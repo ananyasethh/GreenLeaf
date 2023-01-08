@@ -17,7 +17,7 @@
 
     <?php
     include 'DBconfig.php';
-    //include 'menu_cart.php';
+    include 'menu_cart.php';
     if ($_REQUEST['cButton'] == "check")      //if check button is pressed
     {
         $name = array();
