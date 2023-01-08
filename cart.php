@@ -12,12 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./CSS/cart.css" />
     <link rel="icon" href="images/logo_greenLeaf.ico">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"> </script>
 </head>
 
 <body>
 
     <?php include ('menu_cart.php'); ?>
     <?php
+                $totalAmount = 0;
 
 include ('DBconfig.php');
 
@@ -63,9 +65,9 @@ include ('DBconfig.php');
             }
             // echo "BYE FRIENDS";
 
-                echo "<script> window.location.href = 'cart.php' </script> ";
+                // echo "<script> window.location.href = 'cart.php' </script> ";
 
-            //header("Location: cart.php");
+            header("Location: cart.php");
             
             // echo 'window.location = "cart.php";';
         } else if (isset($_COOKIE['userId'])) {
@@ -126,13 +128,33 @@ include ('DBconfig.php');
             console.log(id, "Order id is coming here");
             window.location.href = "cart.php?productEdit=true&operation=sub&id=" + id;
         }
+
+        placeOrder = () => {
+            console.log("Order is placed", <?php echo $totalAmount ?>);
+            var option = {
+                key: "rzp_test_1DP5mmOlF5G5ag",
+                amount: $totalAmount * 100,
+                name: "Acme Corp",
+                description: "Test Transaction",
+                image: "images/logo_greenLeaf.ico",
+                handler: function (response) {
+                    // alert(response.razorpay_payment_id);
+                    header("Location: cart.php");
+                },
+                currency: "INR",
+
+            }
+            var rzp1 = new Razorpay(option);
+            rzp1.open();
+        }
+
     </script>
 
 <?php
 //include 'DBconfig.php';
 //include 'menu.php';
 
-if($_REQUEST['return']=="send")    //when data comes back from cartInfo.php
+if(isset($_REQUEST['return']) && $_REQUEST['return']=="send")    //when data comes back from cartInfo.php
 {
     $name = array();
     $email = array();
@@ -188,11 +210,10 @@ else
 
             <div class="orderNow">
                 <h5>Order Summary</h5>
-                <button class="placeOrder">Place Order</button>
+                <button class="placeOrder" onclick="placeOrder();">Place Order</button>
             </div>
             <div class="orders-section">
                 <?php
-                $totalAmount = 0;
                 foreach ($allProductDetails as $data) {
                     // print_r($data->name);
                     $total = $data->price * $data->qty;
@@ -221,5 +242,27 @@ else
             </div>
         </div>
     </div>
+
+    <script>
+        placeOrder = () => {
+            console.log("Order is placed", );
+            var option = {
+                key: "rzp_test_1DP5mmOlF5G5ag",
+                amount: <?php echo $totalAmount * 100?>,
+                name: "Acme Corp",
+                description: "Test Transaction",
+                image: "images/logo_greenLeaf.ico",
+                handler: function (response) {
+                    // alert(response.razorpay_payment_id);
+                    header("Location: cart.php");
+                },
+                currency: "INR",
+
+            }
+            var rzp1 = new Razorpay(option);
+            rzp1.open();
+        }
+
+    </script>
 </body>
 </html>

@@ -56,8 +56,6 @@
                         // $allData.array_merge($newData);
                         $allData = (json_decode($row['products']));
                         $allData->$productId = 1;
-                        echo "\n lelo";
-                        print_r($allData);
 
                         // if (count($allData) == 0) {
                         //     $allData[$productId] = 1;
