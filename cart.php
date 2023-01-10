@@ -225,6 +225,11 @@ else
         </div>
     </div>
 
+    <?php
+        $id = $_COOKIE['userId'];
+        //print ("$id coming here!");
+    ?>
+
     <script>
         placeOrder = () => {
             console.log("Order is placed", );
@@ -235,8 +240,15 @@ else
                 description: "Test Transaction",
                 image: "images/logo_greenLeaf.ico",
                 handler: function (response) {
-                    // alert(response.razorpay_payment_id);
-                    header("Location: cart.php");
+                    // //
+                    //   $query0 = "INSERT INTO orders(id, cname, cmobile, amount) VALUES ('$id','$name','$mobile',$totalAmount);";
+                    //    mysqli_execute_query($con, $query0);
+                            //header("location: cartInfo.php");
+                        
+                    //execute
+                    //alert(response.razorpay_payment_id);
+                    <?php //header("Location: cart.php?id=$id&amount=$totalAmount"); ?>
+                    window.location.href = "paymentSuccess.php?id="+'<?= $id ?>'+ "&amount="+ '<?= $totalAmount ?>'+ "&mobile="+ '<?= $mobile ?>';
                 },
                 currency: "INR",
 

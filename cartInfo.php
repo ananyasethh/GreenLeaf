@@ -89,15 +89,26 @@
         //echo $name;
         $query = "INSERT INTO customer (name, mobile, email, address, pincode) values ('$name','$mobile','$email','$address','$pincode');";
         $exe = mysqli_query($con, $query);
-        //header('location:cart.php');
-        if (!$exe) {
-            die("Problem occured!");
-        } else {
-            header('location:cart.php');
-        }
+        echo "reached here!";
+        header('location:cart.php');
+        //  if (!$exe) {
+        //      print("Problem occured!");
+        //      header('location:cart.php');
+        //  } else {
+        //      header('location:cart.php');
+        //  }
         //echo "You pressed save button.";
     }
-
+    // else{
+    //     if(isset($_GET['id'])){
+    //         $id = $_GET['id'];
+    //         $amount = $_GET['amount'];
+    //         echo $id;
+    //         echo $amount;
+    //     }
+    //     $query0 = "INSERT INTO orders(id, cname, cmobile, amount) VALUES ('$id','$name','$mobile',$totalAmount);";
+    //     mysqli_execute_query($con, $query0);
+    // }
     ?>
 
 </body>
