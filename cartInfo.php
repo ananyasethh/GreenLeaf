@@ -17,7 +17,7 @@
 
     <?php
     include 'DBconfig.php';
-    include 'menu_cart.php';
+    //include 'menu_cart.php';
     if ($_REQUEST['cButton'] == "check")      //if check button is pressed
     {
         $name = array();
@@ -38,11 +38,11 @@
                 $address = $row['address'];
             }
         } else {
-            $name = "Name Not Found! Fill and Save!";
-            $email = "Email Not Found! Fill and Save!";
+            $name = "";
+            $email = "";
             //$mobile = "";
-            $address = " Address Not Found! Fill and Save";
-            $pincode = "Pincode Not Found! Fill and Save";
+            $address = "";
+            $pincode = "";
         }
         // print ("I pressed ".$name);
         // print ("I pressed ".$email);

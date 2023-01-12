@@ -247,8 +247,8 @@ else
                         
                     //execute
                     //alert(response.razorpay_payment_id);
-                    <?php //header("Location: cart.php?id=$id&amount=$totalAmount"); ?>
-                    window.location.href = "paymentSuccess.php?id="+'<?= $id ?>'+ "&amount="+ '<?= $totalAmount ?>'+ "&mobile="+ '<?= $mobile ?>';
+            
+                    //window.location.href = "paymentSuccess.php?id="+'?= $id ?>'+ "&amount="+ '?= $totalAmount ?>'+ "&mobile="+ '?= $mobile ?>';
                 },
                 currency: "INR",
 
