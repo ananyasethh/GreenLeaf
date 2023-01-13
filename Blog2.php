@@ -14,7 +14,6 @@
     <title>Tree & Forest Activities To Do With Children</title>
 </head>
 <body>
-    <?php include 'menu.php'; ?>
     <?php include 'top-button.php' ?>
      
     <div class="container-fluid pt-5 mt-5">
@@ -129,6 +128,8 @@
    </section>
 
    <p style="text-align:right; font-size:10px;">Resource from: nationalforest.org</p>
+   
+   <?php include 'menu.php'; ?>
    <footer>
   <p style="color: #367E18" class="p-3 bg-light text-center">@GreenLeaf 2022</p>
 </footer>

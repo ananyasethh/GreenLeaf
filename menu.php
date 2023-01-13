@@ -59,7 +59,7 @@
     </div>
   </div>
 
-  <div style="position:fixed; top:0; z-index:1; width:100%; background-color: #f1f1f1;">
+  <div style="position:fixed; top:11%; z-index:1; width:100%; background-color: #f1f1f1;">
     <div style="width: 100%; height: 8px; background: #ccc;">
       <div style="height: 8px; background: #54B435; width: 0%;" id="myBar"></div>
     </div>

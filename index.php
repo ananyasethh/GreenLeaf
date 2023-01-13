@@ -16,9 +16,8 @@
 
 <body>
 
-  <?php include 'dbSupport.php'; ?>
-  <?php include 'menu.php'; ?>
-  <?php include 'top-button.php' ?>
+  <?php include 'dbSupport.php'; 
+   include 'top-button.php'?>
 
   <div id="demo" class="carousel slide" data-ride="carousel">
     <ul class="carousel-indicators">
@@ -410,6 +409,7 @@
     </div>
   </section>
 
+  <?php include 'menu.php'; ?>
   <footer>
     <p style="color: #367E18" class="p-3 bg-light text-center">@GreenLeaf 2022</p>
   </footer>
