@@ -14,7 +14,6 @@
     <title>6 Stylish Plants That Help Clean Toxic From The Air</title>
 </head>
 <body>
-    <?php include 'top-button.php' ?>
     
     <div class="container-fluid pt-5 mt-5">
     <h1 style="color:#005555"class="display-5 text-center">6 Stylish Plants That Help Clean Toxic From The Air</h1>

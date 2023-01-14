@@ -16,10 +16,10 @@
 
 <body>
 
-  <?php include 'menu.php'; ?>
+  <?php include 'menu_cart.php'; ?>
 
   <section class="my-5">
-    <div class="py-5">
+    <div style="padding-top:6%;">
       <h2 class="text-center">Contact Us</h2>
     </div>
     <div class="w-50 m-auto">
