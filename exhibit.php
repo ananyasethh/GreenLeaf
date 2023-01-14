@@ -14,57 +14,6 @@
 </head>
 <body>
 <?php include 'menu.php'; ?>
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="padding-top:7%;">
-  <div class="carouselinner">
-    <div class="carousel-item active">
-      <div class="cardwrapper">
-      <div class="card">
-        <img src="images/exhibit.jpeg" class="card-img-top" alt="Exhibit-1">
-      </div>
-      <div class="card d-none d-md-block">
-        <img src="images/exhibit2.jpeg" class="card-img-top" alt="Exhibit-2">
-      </div>
-      <div class="card d-none d-md-block">
-        <img src="images/Exhibit3.jpg" class="card-img-top" alt="Exhibit-3">
-      </div>
-    </div>
-    </div>
-    <div class="carousel-item">
-      <div class="cardwrapper">
-        <div class="card">
-          <img src="images/Exhibit4.jpg" class="card-img-top" alt="Exhibit-4">
-        </div>
-        <div class="card d-none d-md-block">
-          <img src="images/Exhibit5.jpg" class="card-img-top" alt="Exhibit-5">
-        </div>
-        <div class="card d-none d-md-block">
-          <img src="images/Exhibit6.png" class="card-img-top" alt="Exhibit-6">
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="cardwrapper">
-        <div class="card">
-          <img src="images/Exhibit7.jpg" class="card-img-top" alt="Exhibit-7">
-        </div>
-        <div class="card d-none d-md-block">
-          <img src="images/Exhibit8.jpg" class="card-img-top" alt="Exhibit-8">
-        </div>
-        <div class="card d-none d-md-block">
-          <img src="images/Exhibit9.jpg" class="card-img-top" alt="Exhibit-9">
-        </div>
-      </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
 <div style="padding-top: 20%; padding-left: 30%;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4C3cAOfYNNQ" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 

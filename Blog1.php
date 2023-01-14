@@ -10,8 +10,14 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/exhibit-styles.css">
     <title>6 Stylish Plants That Help Clean Toxic From The Air</title>
+    <style>
+      body
+      {
+        font-family: Josefin Sans;
+      }
+    </style>
 </head>
 <body>
     
@@ -76,8 +82,65 @@
           </div>
         </div>
       </div>
-    </div>
   </section>
+
+  <hr style="border-style:none; border-top-style:dotted; border-width:5px;width:10%; margin-left:50%">
+
+  <section>
+    <div class="container-fluid">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="padding-top:2%;">
+  <div class="carouselinner">
+    <div class="carousel-item active">
+      <div class="cardwrapper">
+      <div class="card">
+        <img src="images/exhibit.jpeg" class="card-img-top" alt="Exhibit-1">
+      </div>
+      <div class="card d-none d-md-block">
+        <img src="images/exhibit2.jpeg" class="card-img-top" alt="Exhibit-2">
+      </div>
+      <div class="card d-none d-md-block">
+        <img src="images/Exhibit3.jpg" class="card-img-top" alt="Exhibit-3">
+      </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cardwrapper">
+        <div class="card">
+          <img src="images/Exhibit4.jpg" class="card-img-top" alt="Exhibit-4">
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="images/Exhibit5.jpg" class="card-img-top" alt="Exhibit-5">
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="images/Exhibit6.png" class="card-img-top" alt="Exhibit-6">
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cardwrapper">
+        <div class="card">
+          <img src="images/Exhibit7.jpg" class="card-img-top" alt="Exhibit-7">
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="images/Exhibit8.jpg" class="card-img-top" alt="Exhibit-8">
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="images/Exhibit9.jpg" class="card-img-top" alt="Exhibit-9">
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+  </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   <hr style="border-style:none; border-top-style:dotted; border-width:5px;width:10%; margin-left:50%">
 
@@ -127,6 +190,64 @@
       </div>
     </div>
   </section>
+
+  <hr style="border-style:none; border-top-style:dotted; border-width:5px;width:10%; margin-left:50%">
+
+  <section>
+    <div class="container-fluid">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="padding-top:2%;">
+  <div class="carouselinner">
+    <div class="carousel-item active">
+      <div class="cardwrapper">
+      <div class="card">
+        <img src="images/slider3.jpg" class="card-img-top" alt="Sliding Image">
+      </div>
+      <div class="card d-none d-md-block">
+        <img src="images/slider1.jpg" class="card-img-top" alt="Sliding Image">
+      </div>
+      <div class="card d-none d-md-block">
+        <img src="images/slider2.jpg" class="card-img-top" alt="Sliding Image">
+      </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cardwrapper">
+        <div class="card">
+          <img src="images/slider6.jpg" class="card-img-top" alt="Sliding Image">
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="images/slider4.jpeg" class="card-img-top" alt="Sliding Image">
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="images/slider5.jpg" class="card-img-top" alt="Sliding Image">
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cardwrapper">
+        <div class="card">
+          <img src="images/slider7.jpg" class="card-img-top" alt="Sliding Image">
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="images/slider9.jpg" class="card-img-top" alt="Sliding Image">
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="images/slider8.jpg" class="card-img-top" alt="Exhibit-9">
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+  </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   <hr style="border-style:none; border-top-style:dotted; border-width:5px;width:10%; margin-left:50%">
 
