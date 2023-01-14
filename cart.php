@@ -132,7 +132,21 @@ include ('DBconfig.php');
 
     </script>
 
-<?php
+
+
+    <div class="cart-container">
+        <div class="shipping-details">
+            <div class="content-wrapper">
+                <div class="top">
+                    <span>Shipping Details</span>
+                    <!-- <button name="">Save</button>  -->
+                </div>
+                <div>
+                    
+                <!-- Pushing data to cartInfo.php -->
+                    <form action='cartInfo.php' method='post' class='form-container'>
+                       
+                    <?php
 //include 'DBconfig.php';
 //include 'menu.php';
 
@@ -149,34 +163,30 @@ if(isset($_REQUEST['return']) && $_REQUEST['return']=="send")    //when data com
     $email = $_REQUEST['email'];
     $address = $_REQUEST['address'];
     $pincode = $_REQUEST['pincode'];
+    echo "
+                        <input placeholder='Enter Mobile Number' id='mobile' name='mobile' type='text' maxlength='10' minlength='10' value='$mobile' required/>
+                        <button class='btn btn-success' type='submit' name='cButton' value='check' style='color: white; font-weight: bold;'>CHECK</button> 
+                        <input placeholder='Enter Name' id='name' name='name' type='text' value='$name'/>
+                        <input placeholder='Enter Email' id='email' name='email' type='email' value='$email'/>
+                        <input placeholder='Enter Pincode' id='pincode' name='pincode' type='text' maxlength='6' value='$pincode'/>
+                        <textarea placeholder=' Enter Address' id='address' name='address'>$address</textarea>
+                        <button class='btn btn-success' type='submit' name='cButton' value='save' style='color: white; font-weight: bold;'>SAVE</button>
+
+    ";
 }
 else
 {
-    // $name = array[];
-    // $email = array[];
-    // $mobile = array[];
-    // $pincode = array[];
-    // $address = array[];
+    echo "
+    <input placeholder='Enter Mobile Number' id='mobile' name='mobile' type='text' maxlength='10' minlength='10' required/>
+    <button class='btn btn-success' type='submit' name='cButton' value='check' style='color: white; font-weight: bold;'>CHECK</button> 
+    <input placeholder='Enter Name' id='name' name='name' type='text'/>
+    <input placeholder='Enter Email' id='email' name='email' type='email'/>
+    <input placeholder='Enter Pincode' id='pincode' name='pincode' type='text' maxlength='6'/>
+    <textarea placeholder=' Enter Address' id='address' name='address'></textarea>
+    <button class='btn btn-success' type='submit' name='cButton' value='save' style='color: white; font-weight: bold;'>SAVE</button>
+";
 }
 ?>
-
-    <div class="cart-container">
-        <div class="shipping-details">
-            <div class="content-wrapper">
-                <div class="top">
-                    <span>Shipping Details</span>
-                    <!-- <button name="">Save</button>  -->
-                </div>
-                <div>
-                    <!-- Pushing data to cartInfo.php -->
-                    <form action='cartInfo.php' method='post' class='form-container'>
-                        <input placeholder='Enter Mobile Number' name='mobile' type='text' maxlength='10' minlength='10' value='<?php echo @$mobile?>' onfocus="this.value=''" required/>
-                        <button class='btn btn-success' type='submit' name='cButton' value='check' style="color: white; font-weight: bold;">CHECK</button> 
-                        <input placeholder='Enter Name' name='name' type='text' value='<?php echo @$name?>' onfocus="this.value=''"/>
-                        <input placeholder='Enter Email' name='email' type='email' value='<?php echo @$email?>' onfocus="this.value=''"/>
-                        <input placeholder='Enter Pincode' name='pincode' type='text' maxlength='6' value='<?php echo @$pincode ?>' onfocus="this.value=''"/>
-                        <textarea placeholder=' Enter Address' name='address' onfocus="this.value=''"><?php echo @$address ?></textarea>
-                        <button class='btn btn-success' type='submit' name='cButton' value='save' style="color: white; font-weight: bold;">SAVE</button>
                     </form>
                 </div>
                 <!-- <div class="order-instruction">
@@ -219,8 +229,7 @@ else
             </div>
             <div class="totalAmount">
                 <h5>Total Amount</h5>
-                <h3>₹ <?= $totalAmount ?>
-                </h3>
+                <h3 name="amount">₹ <?= $totalAmount ?></h3>
             </div>
         </div>
     </div>
@@ -233,6 +242,12 @@ else
     <script>
         placeOrder = () => {
             console.log("Order is placed", );
+            var mobile = document.getElementById("mobile").value;
+            // console.log(mobile);
+            // return;
+            if (!mobile) {
+                alert("Please enter all the details!")
+            }else{
             var option = {
                 key: "rzp_test_1DP5mmOlF5G5ag",
                 amount: <?php echo $totalAmount * 100?>,
@@ -247,8 +262,7 @@ else
                         
                     //execute
                     //alert(response.razorpay_payment_id);
-            
-                    //window.location.href = "paymentSuccess.php?id="+'?= $id ?>'+ "&amount="+ '?= $totalAmount ?>'+ "&mobile="+ '?= $mobile ?>';
+                   window.location.href = "paymentSuccess.php?id=" + '<?php echo $id ?>' +"&amount="+'<?php echo $totalAmount ?>' + "&mobile="+ mobile;
                 },
                 currency: "INR",
 
@@ -256,7 +270,9 @@ else
             var rzp1 = new Razorpay(option);
             rzp1.open();
         }
+    }
 
-    </script>
+     </script>
+
 </body>
 </html>
