@@ -18,17 +18,18 @@
     <?php
     include 'DBconfig.php';
     include 'menu_cart.php';
+    include 'orderid_maker.php';
+    $orderid = $orderID;
+    // echo $orderid;
+
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
         $amount = $_GET['amount'];
         $mobile = $_GET['mobile'];
-        // echo $id;
-        // echo $amount;
-        // echo $mobile;
 
         $query = array();
-        $query[0] = "INSERT INTO orders(id, cmobile, amount) VALUES('$id','$mobile',$amount);";
-        $query[1] = "UPDATE orders INNER JOIN cart ON orders.id=cart.id SET orders.products = cart.products WHERE orders.id='$id';";
+        $query[0] = "INSERT INTO orders(orderID, cid, cmobile, amount) VALUES('$orderid','$id','$mobile',$amount);";
+        $query[1] = "UPDATE orders INNER JOIN cart ON orders.cid=cart.id SET orders.products = cart.products WHERE orders.orderID='$orderid';";
         $query[2] = "UPDATE orders INNER JOIN customer ON orders.cmobile=customer.mobile SET orders.cname = customer.name WHERE orders.cmobile='$mobile';";
         $query[3] = "DELETE FROM cart WHERE id='$id';";
         for ($i = 0; $i <= 3; $i++) {

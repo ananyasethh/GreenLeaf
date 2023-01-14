@@ -153,13 +153,9 @@ else    #if connection established
             $query[91] = "INSERT INTO product VALUES('po26','Handi Shape Round Ceramic Pot (Pack of 5)',509,'Pot','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-3-inch-handi-shape-round-ceramic-pots-pack-of-five.jpg?v=1634208197');";
             $query[92] = "INSERT INTO product VALUES('po27','Elephant Shape Pot (Set of 2)',599,'Pot','https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-planters-3-7-inch-9-cm-elephant-shape-marble-finish-ceramic-pot-white-16968461451404_512x512.jpg?v=1634207908');";
             $query[93] = "INSERT INTO product VALUES('po28','Face Planters',799,'Pot','https://i.pinimg.com/736x/25/4b/f4/254bf4670138401f6c2259a5060f36dc.jpg');";
-
-
-          
             $query[94] = "INSERT INTO product VALUES('ac22','Plant Stand for Balcony',740,'Accessories','https://sc04.alicdn.com/kf/Heb92e32bfa684ba784408399c5a0437dX.jpg');";
             $query[95] = "INSERT INTO product VALUES('ac23','Tall Plant Stand',2999,'Accessories','https://m.media-amazon.com/images/I/61rx8u8YNML._AC_SL1001_.jpg');";
 
-           
            $query[96] = "CREATE TABLE cart
             (
             id varchar(100),
@@ -181,17 +177,25 @@ else    #if connection established
             email VARCHAR(50),
             mobile VARCHAR(10),
             comment longtext
+        );";
+
+        $query[99] = "CREATE TABLE orders
+        (
+            orderID varchar(100),
+            cid varchar(100),
+            cname varchar(40),
+            cmobile varchar(10),
+            date date default current_timestamp,
+            products varchar(1000),
+            amount decimal
         );
-        ";
+            ";
 
             #execution
-            for ($i = 0; $i <= 98; $i++) 
+            for ($i = 0; $i <= 99; $i++) 
             {
                 mysqli_query($con, $query[$i]);
             }
-            print ("DATABASE AND TABLE CREATED HIHIHIHIHIHI");
-            sleep(3);
-            print ("header executed after creating database;");
             //header('location:index.php');
         }   #print("out of all code!");     #print("Flag: ".$flag);
 ?>
