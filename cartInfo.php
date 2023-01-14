@@ -15,9 +15,15 @@
 
 <body>
 
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
+  <div class="container-fluid">
+    <a style="color: #367E18; font-size: 2.3rem" class="navbar-brand" href="index.php">
+      <img src="images\logo_greenLeaf.png" alt="Logo" width="45" height="">
+      GreenLeaf</a></div>
+</nav>
+
     <?php
     include 'DBconfig.php';
-    //include 'menu_cart.php';
     if ($_REQUEST['cButton'] == "check")      //if check button is pressed
     {
         $name = array();
@@ -37,13 +43,13 @@
                 $pincode = $row['pincode'];
                 $address = $row['address'];
             }
-        } else {
-            $name = "";
-            $email = "";
-            //$mobile = "";
-            $address = "";
-            $pincode = "";
-        }
+            } else {
+                $name = "";
+                $email = "";
+                //$mobile = "";
+                $address = "";
+                $pincode = "";
+            }
         // print ("I pressed ".$name);
         // print ("I pressed ".$email);
         // print ("I pressed ".$mobile);
@@ -70,8 +76,7 @@
         document.querySelector("form").addEventListener("submit", function(evt) {
             //evt.preventDefault();
             //document.getElementById("form1").submit();
-        });
-
+         });
         // Just call the .click method of the button
         document.querySelector("input[type='submit']").click();
     </script>
@@ -88,16 +93,8 @@
         $address = $_REQUEST['address'];
         //echo $name;
         $query = "INSERT INTO customer (name, mobile, email, address, pincode) values ('$name','$mobile','$email','$address','$pincode');";
-        $exe = mysqli_query($con, $query);
-        echo "reached here!";
-        header('location:cart.php');
-        //  if (!$exe) {
-        //      print("Problem occured!");
-        //      header('location:cart.php');
-        //  } else {
-        //      header('location:cart.php');
-        //  }
-        //echo "You pressed save button.";
+        mysqli_query($con, $query);
+        header('location: cart.php');
     }
     // else{
     //     if(isset($_GET['id'])){
@@ -110,7 +107,6 @@
     //     mysqli_execute_query($con, $query0);
     // }
     ?>
-
 </body>
 
 </html>
