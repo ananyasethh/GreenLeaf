@@ -165,7 +165,7 @@ if(isset($_REQUEST['return']) && $_REQUEST['return']=="send")    //when data com
     $pincode = $_REQUEST['pincode'];
     echo "
                         <input placeholder='Enter Mobile Number' id='mobile' name='mobile' type='text' maxlength='10' minlength='10' value='$mobile' required/>
-                        <button class='btn btn-success' type='submit' name='cButton' value='check' style='color: white; font-weight: bold;'>CHECK</button> 
+                        <button class='btn btn-success' type='submit' name='cButton' value='check' style='color: white; font-weight: bold;'>FETCH MY DETAILS</button> 
                         <input placeholder='Enter Name' id='name' name='name' type='text' value='$name'/>
                         <input placeholder='Enter Email' id='email' name='email' type='email' value='$email'/>
                         <input placeholder='Enter Pincode' id='pincode' name='pincode' type='text' maxlength='6' value='$pincode'/>
@@ -178,7 +178,7 @@ else
 {
     echo "
     <input placeholder='Enter Mobile Number' id='mobile' name='mobile' type='text' maxlength='10' minlength='10' required/>
-    <button class='btn btn-success' type='submit' name='cButton' value='check' style='color: white; font-weight: bold;'>CHECK</button> 
+    <button class='btn btn-success' type='submit' name='cButton' value='check' style='color: white; font-weight: bold;'>FETCH MY DETAILS</button> 
     <input placeholder='Enter Name' id='name' name='name' type='text'/>
     <input placeholder='Enter Email' id='email' name='email' type='email'/>
     <input placeholder='Enter Pincode' id='pincode' name='pincode' type='text' maxlength='6'/>
