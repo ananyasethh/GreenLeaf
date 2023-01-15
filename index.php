@@ -318,6 +318,29 @@
 
         <div class="col-lg-4 col-md-4 col-12">
           <div class="card">
+            <img class="card-img-top" src="images/peopleandplants.jpg" alt="Blog3" height=394>
+            <div class="card-body">
+              <h4 class="card-title">People And Plants</h4>
+              <a href="social-blog.php" class="btn" style="background: #5cd63a; background-image: 
+                      -webkit-linear-gradient(top, #5cd63a, #1b730b);
+                      background-image: -moz-linear-gradient(top, #5cd63a, #1b730b);
+                      background-image: -ms-linear-gradient(top, #5cd63a, #1b730b);
+                      background-image: -o-linear-gradient(top, #5cd63a, #1b730b);
+                      background-image: linear-gradient(to bottom, #5cd63a, #1b730b);
+                      -webkit-border-radius: 9;
+                      -moz-border-radius: 9;
+                      border-radius: 9px;
+                      font-family: 'Josefin Sans', sans-serif;
+                      color: #f5fff6;
+                      font-size: 20px;
+                      padding: 10px 20px 10px 20px;
+                      text-decoration: none;">VISIT</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
             <img class="card-img-top" src="images/blog2.0.jpg" alt="Blog2">
             <div style="padding-top:12.5%;" class="card-body">
               <h4 class="card-title">Tree & Forest Activities To Do With Children</h4>
@@ -335,29 +358,6 @@
                        font-size: 20px;
                        padding: 10px 20px 10px 20px;
                        text-decoration: none;">Read Now ></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-12">
-          <div class="card">
-            <img class="card-img-top" src="images/blog3.0.jpg" alt="Blog3">
-            <div style="padding-top:20%;" class="card-body">
-              <h4 class="card-title">Reviews</h4>
-              <a href="exhibit.php" class="btn" style="background: #5cd63a; background-image: 
-                      -webkit-linear-gradient(top, #5cd63a, #1b730b);
-                      background-image: -moz-linear-gradient(top, #5cd63a, #1b730b);
-                      background-image: -ms-linear-gradient(top, #5cd63a, #1b730b);
-                      background-image: -o-linear-gradient(top, #5cd63a, #1b730b);
-                      background-image: linear-gradient(to bottom, #5cd63a, #1b730b);
-                      -webkit-border-radius: 9;
-                      -moz-border-radius: 9;
-                      border-radius: 9px;
-                      font-family: 'Josefin Sans', sans-serif;
-                      color: #f5fff6;
-                      font-size: 20px;
-                      padding: 10px 20px 10px 20px;
-                      text-decoration: none;">VISIT</a>
             </div>
           </div>
         </div>
