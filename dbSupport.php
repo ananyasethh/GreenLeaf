@@ -190,9 +190,13 @@ else    #if connection established
             amount decimal
         );
             ";
+        
+        $query[100] = "UPDATE product SET Price=Price-(Price * (70/100)) WHERe Category = 'Pot';";
+        $query[101] = "UPDATE product SET Price=Price-(Price * (50/100)) WHERE Category = 'Plant';";
+        $query[102] = "UPDATE product SET Price=Price-(Price * (35/100)) WHERE Category = 'Accessories';";
 
             #execution
-            for ($i = 0; $i <= 99; $i++) 
+            for ($i = 0; $i <= 102; $i++) 
             {
                 mysqli_query($con, $query[$i]);
             }
