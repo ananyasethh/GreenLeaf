@@ -243,11 +243,20 @@ else
         placeOrder = () => {
             console.log("Order is placed", );
             var mobile = document.getElementById("mobile").value;
-            // console.log(mobile);
-            // return;
-            if (!mobile) {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var pincode = document.getElementById("pincode").value;
+            var address = document.getElementById("address").value;
+
+            console.log(mobile);
+            console.log(name);
+            console.log(email);
+            console.log(pincode);
+            console.log(address);
+
+            if (!mobile || !name || !email || !pincode || !address) {
                 alert("Please enter all the details!")
-            }else{
+            } else {
             var option = {
                 key: "rzp_test_1DP5mmOlF5G5ag",
                 amount: <?php echo $totalAmount * 100?>,
