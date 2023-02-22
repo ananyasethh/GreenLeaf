@@ -17,6 +17,3 @@ Development Server: Apache
 <strong>ARPAN BHATTACHARYA</strong>
 <strong>ANKUR CHAURASIA </strong>
 </pre>
-<hr>
-<h3>ScreenShots</h3>
-![Home1](https://user-images.githubusercontent.com/48471308/220597122-3241c49e-09ca-4f40-b673-33649a679932.jpg)
