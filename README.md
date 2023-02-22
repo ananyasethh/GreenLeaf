@@ -16,7 +16,7 @@ Development Server: Apache
 <pre>
 <strong><a href="https://github.com/ananyasethh">ANANYA SETH</a></strong>  
 <strong><a href="https://github.com/arpanbhattacharya21">ARPAN BHATTACHARYA</a></strong>
-<strong>ANKUR CHAURASIA</strong>
+<strong><a href="https://github.com/ankurchaurasia1">ANKUR CHAURASIA</a></strong>
 </pre>
 
 ## ABOUT
