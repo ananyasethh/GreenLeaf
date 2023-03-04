@@ -12,6 +12,15 @@ Back-end language:  PHP
 Database:           MySQL
 Development Server: Apache
 </pre>
+
+## ABOUT
+
+Please follow the following link <a href="Document For Public and Users/About GreenLeaf.md">CLICK FOR ABOUT GreenLeaf</a>
+
+## SCREENSHOTS OF THE WEBSITE
+
+Find it here: <a href="SCREENSHOTS/Screenshots of GreenLeaf.md">CLICK HERE FOR SCREENSHOTS</a>
+
 ## PROJECT TEAM
 <pre>
 <strong><a href="https://github.com/ananyasethh">ANANYA SETH</a></strong>  
@@ -19,6 +28,4 @@ Development Server: Apache
 <strong><a href="https://github.com/ankurchaurasia1">ANKUR CHAURASIA</a></strong>
 </pre>
 
-## ABOUT
 
-Please follow the following link <a href="Document For Public and Users/About GreenLeaf.md">CLICK FOR ABOUT GreenLeaf</a>
